@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+$black-color: rgb(0, 0, 0);
+$white-color: rgb(255, 255, 255);
+$casual-color: #2f2e26;
+$secondary-color: #222831;
+
+/* Grid Variables */
+$main-gap: 15px;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'x-small-max': (
+    max-width: 575px
+  ),
+  'small-min': (
+    min-width: 576px
+  ),
+  'small-max': (
+    max-width: 767px
+  ),
+  'medium-min': (
+    min-width: 768px
+  ),
+  'medium-max': (
+    max-width: 991px
+  ),
+  'large-min': (
+    min-width: 992px
+  ),
+  'large-max': (
+    max-width: 1199px
+  ),
+  'x-large-min': (
+    min-width: 1200px
+  ),
+  'x-large-max': (
+    max-width: 1299px
+  ),
+  'xx-large-min': (
+    min-width: 1300px
+  ),
+  'xx-large-max': (
+    max-width: 1499px
+  ),
+  'xxx-large-min': (
+    min-width: 1500px
+  ),
+  'xxx-large-max': (
+    max-width: 1800px
+  )
+) !default;
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

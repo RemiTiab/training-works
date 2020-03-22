@@ -1,0 +1,28 @@
+{
+  "name": "training-works",
+  "version": "1.0.0",
+  "description": "Test Multiple Libraries and CodePen Skills",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemiTiab/training-works.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RemiTiab/training-works/issues"
+  },
+  "homepage": "https://github.com/RemiTiab/training-works#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
