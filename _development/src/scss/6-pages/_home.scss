@@ -1,0 +1,19 @@
+.page--home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20px;
+
+    &__title {
+      font-size: 2.25rem;
+      margin-bottom:20px;
+      color: $gold-color;
+    }
+  }
+}

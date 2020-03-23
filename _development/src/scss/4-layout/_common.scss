@@ -13,3 +13,17 @@
   margin: 50px 150px;
   height: 100%;
 }
+
+.libraries {
+  .library {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 0.9375rem; // 15px
+
+    .source {
+      text-align: center;
+    }
+  }
+}

@@ -1,18 +1,30 @@
 const express = require('express');
 const app = express();
-
 // Use variables environment (/.env)
 const dotenv = require('dotenv').config();
-
-// Set PUG like templating motor
+// Setup express()
 app.set('view engine', 'pug');
 //Use Script & CSS
 app.use(express.static('assets'));
-
-app.get('/', function(req, res) {
-  res.render('index', { pageTitle: 'Training Works Home' });
-});
-
+//Port rendering
 app.listen(process.env.PORT, () =>
   console.log(`Front app listening on port ${process.env.PORT}!`)
 );
+
+app.get('/', function(req, res) {
+  res.render('index', { title: 'page index' });
+});
+
+/* Libraries */
+// Particles.js
+app.get('/libraries-0', function(req, res) {
+  res.render('libraries-0', { pageTitle: 'Particles.js' });
+});
+// Countup.js
+app.get('/libraries-1', function(req, res) {
+  res.render('libraries-1', { pageTitle: 'Countup.js' });
+});
+
+/* Codepens */
+/* Apis */
+/* Others */

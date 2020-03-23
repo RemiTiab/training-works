@@ -1,3 +1,8 @@
-include ../partials/header.pug
-h1 HELLO
-include ../partials/footer.pug
+include ../partials/components/header.pug
+<div class="page page--home">
+  include ../partials/parts/libraries.pug
+  include ../partials/parts/codepens.pug
+  include ../partials/parts/apis.pug
+  include ../partials/parts/others.pug
+</div>
+include ../partials/components/footer.pug

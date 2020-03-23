@@ -350,6 +350,10 @@ template {
 @charset "UTF-8";
 /* 1. Configuration and helpers */
 /* Grid Variables */
+.page--countup-js .container__numbers {
+  display: flex;
+  flex-direction: column; }
+
 /* Normalize.css */
 /* 2. Vendors */
 /* 3. Base stuff */
@@ -501,15 +505,35 @@ body {
   margin: 50px 150px;
   height: 100%; }
 
+.libraries .library {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  margin-bottom: 0.9375rem; }
+  .libraries .library .source {
+    text-align: center; }
+
 /* 5. Components */
 .header {
   width: 100%;
   background-color: #222831;
   text-align: center;
-  padding: 15px 0; }
+  padding: 15px 0;
+  position: relative; }
   .header__title {
     text-transform: uppercase;
     font-size: 2.5rem; }
+  .header__backhome {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #2f2e26;
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 10px; }
 
 .footer {
   width: 100%;
@@ -520,3 +544,33 @@ body {
     font-size: 1.5rem; }
 
 /* 6. Page-specific styles */
+.page--home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .page--home .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; }
+    .page--home .contents__title {
+      font-size: 2.25rem;
+      margin-bottom: 20px;
+      color: rgba(255, 217, 0, 0.767); }
+
+.page--countup-js .container__numbers {
+  background: #222831;
+  height: 55vh;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px; }
+
+.page--countup-js .number {
+  font-size: 150px;
+  color: rgba(255, 217, 0, 0.767); }
+
+/* 6. Page Libraries */
+/* 6. Page Codepens */
+/* 6. Page Apis */
+/* 6. Page Others */

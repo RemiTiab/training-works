@@ -1,0 +1,15 @@
+.page--countup-js {
+  .container__numbers {
+  background: $secondary-color;
+  height: 55vh;
+  @extend %flex-column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.number {
+  font-size: 150px;
+  color: $gold-color;
+}
+}
