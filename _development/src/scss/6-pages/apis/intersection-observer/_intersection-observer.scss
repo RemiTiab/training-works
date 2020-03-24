@@ -1,0 +1,45 @@
+.page--intersection-observer {
+  overflow: hidden;
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .main-content__section {
+    @extend %flex-row;
+    min-width: 950px;
+    align-items: center;
+    justify-content: space-around;
+
+    &:not(:last-of-type) {
+      margin-bottom: 100px;
+    }
+
+    &:nth-of-type(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .section__img {
+      width: 150px;
+    }
+
+    .section__text {
+      color: $white-color;
+    }
+  }
+
+  .main-content__section {
+    transform: translate(250px, 0);
+    opacity: 0;
+  }
+
+  .main-content__section:nth-last-of-type(odd) {
+    transform: translate(-250px, 0);
+    opacity: 0;
+  }
+
+  .main-content__section.is-coming-left {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.7s ease 0.5s;
+  }
+}

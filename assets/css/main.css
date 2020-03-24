@@ -350,6 +350,10 @@ template {
 @charset "UTF-8";
 /* 1. Configuration and helpers */
 /* Grid Variables */
+.page--intersection-observer .main-content__section {
+  display: flex;
+  flex-direction: row; }
+
 .page--countup-js .container__numbers {
   display: flex;
   flex-direction: column; }
@@ -505,13 +509,13 @@ body {
   margin: 50px 150px;
   height: 100%; }
 
-.libraries .library {
+.libraries .library, .libraries .api, .apis .library, .apis .api {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-content: center;
   margin-bottom: 0.9375rem; }
-  .libraries .library .source {
+  .libraries .library .source, .libraries .api .source, .apis .library .source, .apis .api .source {
     text-align: center; }
 
 /* 5. Components */
@@ -573,4 +577,32 @@ body {
 /* 6. Page Libraries */
 /* 6. Page Codepens */
 /* 6. Page Apis */
+.page--intersection-observer {
+  overflow: hidden; }
+  .page--intersection-observer .title {
+    text-align: center;
+    margin-bottom: 50px; }
+  .page--intersection-observer .main-content__section {
+    min-width: 950px;
+    align-items: center;
+    justify-content: space-around; }
+    .page--intersection-observer .main-content__section:not(:last-of-type) {
+      margin-bottom: 100px; }
+    .page--intersection-observer .main-content__section:nth-of-type(odd) {
+      flex-direction: row-reverse; }
+    .page--intersection-observer .main-content__section .section__img {
+      width: 150px; }
+    .page--intersection-observer .main-content__section .section__text {
+      color: white; }
+  .page--intersection-observer .main-content__section {
+    transform: translate(250px, 0);
+    opacity: 0; }
+  .page--intersection-observer .main-content__section:nth-last-of-type(odd) {
+    transform: translate(-250px, 0);
+    opacity: 0; }
+  .page--intersection-observer .main-content__section.is-coming-left {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: all 0.7s ease 0.5s; }
+
 /* 6. Page Others */

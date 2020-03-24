@@ -12,7 +12,7 @@ app.listen(process.env.PORT, () =>
 );
 
 app.get('/', function(req, res) {
-  res.render('index', { title: 'page index' });
+  res.render('index', { pageTitle: 'Training Works' });
 });
 
 /* Libraries */
@@ -27,4 +27,8 @@ app.get('/libraries-1', function(req, res) {
 
 /* Codepens */
 /* Apis */
+// Intersection-observer
+app.get('/apis-0', function(req, res) {
+  res.render('apis-0', { pageTitle: 'Intersection-observer' });
+});
 /* Others */
