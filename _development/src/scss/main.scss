@@ -29,10 +29,15 @@
 /* 6. Page-specific styles */
 @import '6-pages/404';
 @import '6-pages/home';
-@import '6-pages/libraries/countup.js/countup';
 
 /* 6. Page Libraries */
+@import '6-pages/libraries/countup.js/countup';
+
 /* 6. Page Codepens */
+@import '6-pages/codepens/dynamic-timer/dynamic-timer';
+
 /* 6. Page Apis */
 @import '6-pages/apis/intersection-observer/intersection-observer';
+
 /* 6. Page Others */
+@import '6-pages/others/some-css-tricks/some-css-tricks';

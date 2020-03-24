@@ -17,8 +17,10 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Countup.js (https://inorganik.github.io/countUp.js/)
 
 ### CodePens
+- Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)
 
 ### Api's
 - Intersection-observer (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)
 
 ### Others
+- Some CSS Tricks

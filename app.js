@@ -26,9 +26,19 @@ app.get('/libraries-1', function(req, res) {
 });
 
 /* Codepens */
+// Dynamic Timer
+app.get('/codepens-0', function(req, res) {
+  res.render('codepens-0', { pageTitle: 'Dynamic Timer' });
+});
+
 /* Apis */
 // Intersection-observer
 app.get('/apis-0', function(req, res) {
   res.render('apis-0', { pageTitle: 'Intersection-observer' });
 });
+
 /* Others */
+// Some CSS Tricks
+app.get('/others-0', function(req, res) {
+  res.render('others-0', { pageTitle: 'Some CSS Tricks' });
+});

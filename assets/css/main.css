@@ -354,7 +354,7 @@ template {
   display: flex;
   flex-direction: row; }
 
-.page--countup-js .container__numbers {
+.page--countup-js .container__numbers, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
   display: flex;
   flex-direction: column; }
 
@@ -498,7 +498,8 @@ body {
 /* 4. Layout-related sections */
 .body {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   position: relative; }
 
 .wrapper {
@@ -509,13 +510,13 @@ body {
   margin: 50px 150px;
   height: 100%; }
 
-.libraries .library, .libraries .api, .apis .library, .apis .api {
+.libraries .library, .libraries .api, .libraries .codepen, .libraries .other, .apis .library, .apis .api, .apis .codepen, .apis .other, .codepens .library, .codepens .api, .codepens .codepen, .codepens .other, .others .library, .others .api, .others .codepen, .others .other {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-content: center;
   margin-bottom: 0.9375rem; }
-  .libraries .library .source, .libraries .api .source, .apis .library .source, .apis .api .source {
+  .libraries .library .source, .libraries .api .source, .libraries .codepen .source, .libraries .other .source, .apis .library .source, .apis .api .source, .apis .codepen .source, .apis .other .source, .codepens .library .source, .codepens .api .source, .codepens .codepen .source, .codepens .other .source, .others .library .source, .others .api .source, .others .codepen .source, .others .other .source {
     text-align: center; }
 
 /* 5. Components */
@@ -563,6 +564,7 @@ body {
       margin-bottom: 20px;
       color: rgba(255, 217, 0, 0.767); }
 
+/* 6. Page Libraries */
 .page--countup-js .container__numbers {
   background: #222831;
   height: 55vh;
@@ -574,8 +576,69 @@ body {
   font-size: 150px;
   color: rgba(255, 217, 0, 0.767); }
 
-/* 6. Page Libraries */
 /* 6. Page Codepens */
+:root {
+  --color-grey: #2a2a21;
+  --color-yellow: #edce4c;
+  --color-bright-yellow: #ffe45e;
+  --color-mustard: #dbbd3b; }
+
+.page--dynamic-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 25px 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom left, var(--color-bright-yellow), var(--color-mustard)); }
+  .page--dynamic-timer .timer {
+    box-shadow: 10px 10px 60px rgba(27, 27, 27, 0.9);
+    display: -ms-grid;
+    display: grid;
+    -moz-column-gap: 1px;
+         column-gap: 1px;
+    row-gap: 1px;
+    -ms-grid-columns: (100px)[3];
+    grid-template-columns: repeat(3, 100px);
+    -ms-grid-rows: (100px)[5];
+    grid-template-rows: repeat(5, 100px); }
+  .page--dynamic-timer .block {
+    height: 100px;
+    position: relative;
+    transition: 400ms transform ease;
+    transform-style: preserve-3d;
+    width: 100px; }
+    .page--dynamic-timer .block > div {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3) inset, 0 0 30px rgba(0, 0, 0, 0.3) inset;
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+    .page--dynamic-timer .block .front,
+    .page--dynamic-timer .block .back {
+      background-color: var(--color-bright-yellow); }
+    .page--dynamic-timer .block .top,
+    .page--dynamic-timer .block .bottom {
+      background-color: var(--color-grey); }
+    .page--dynamic-timer .block .front {
+      transform: rotateY(0deg) translateZ(50px); }
+    .page--dynamic-timer .block .top {
+      transform: rotateX(90deg) translateZ(50px); }
+    .page--dynamic-timer .block .back {
+      transform: rotateY(180deg) translateZ(50px); }
+    .page--dynamic-timer .block .bottom {
+      transform: rotateX(-90deg) translateZ(50px); }
+  .page--dynamic-timer .show-front {
+    transform: translateZ(-100px) rotateX(0deg); }
+  .page--dynamic-timer .show-top {
+    transform: translateZ(-100px) rotateX(-90deg); }
+  .page--dynamic-timer .show-back {
+    transform: translateZ(-100px) rotateX(-180deg); }
+  .page--dynamic-timer .show-bottom {
+    transform: translateZ(-100px) rotateX(-270deg); }
+
 /* 6. Page Apis */
 .page--intersection-observer {
   overflow: hidden; }
@@ -606,3 +669,437 @@ body {
     transition: all 0.7s ease 0.5s; }
 
 /* 6. Page Others */
+.page--some-css-tricks .container__tricks {
+  align-items: center;
+  color: white; }
+
+.page--some-css-tricks .trick {
+  align-items: center;
+  width: 100%;
+  margin-top: 1.875em; }
+  .page--some-css-tricks .trick__subtitle {
+    margin-bottom: 50px;
+    text-decoration: underline; }
+
+@-webkit-keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0); } }
+
+@keyframes bouncing-loader {
+  to {
+    opacity: 0.1;
+    transform: translate3d(0, -1rem, 0); } }
+
+.page--some-css-tricks .bouncing-loader {
+  display: flex;
+  justify-content: center; }
+
+.page--some-css-tricks .bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: #8385aa;
+  border-radius: 50%;
+  -webkit-animation: bouncing-loader 0.6s infinite alternate;
+          animation: bouncing-loader 0.6s infinite alternate; }
+
+.page--some-css-tricks .bouncing-loader > div:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+
+.page--some-css-tricks .bouncing-loader > div:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+
+.page--some-css-tricks .button {
+  background-color: #c47135;
+  border: none;
+  color: white;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  border-radius: 5px; }
+
+.page--some-css-tricks .button:before,
+.page--some-css-tricks .button:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: '';
+  height: 24px;
+  position: absolute;
+  width: 24px; }
+
+.page--some-css-tricks .button:before {
+  border-top: 2px solid #c47135;
+  left: 0px;
+  top: -5px; }
+
+.page--some-css-tricks .button:after {
+  border-bottom: 2px solid #c47135;
+  bottom: -5px;
+  right: 0px; }
+
+.page--some-css-tricks .button:hover {
+  background-color: #c47135; }
+
+.page--some-css-tricks .button:hover:before,
+.page--some-css-tricks .button:hover:after {
+  height: 100%;
+  width: 100%; }
+
+@-webkit-keyframes donut-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.page--some-css-tricks .donut {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #7983ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: donut-spin 1.2s linear infinite;
+          animation: donut-spin 1.2s linear infinite; }
+
+.page--some-css-tricks .el {
+  transition: max-height 0.5s;
+  overflow: hidden;
+  max-height: 0;
+  color: gold; }
+
+.page--some-css-tricks .trigger:hover > .el {
+  max-height: var(--max-height); }
+
+.page--some-css-tricks .hover-shadow-box-animation {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  margin: 10px;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform; }
+
+.page--some-css-tricks .hover-shadow-box-animation:hover,
+.page--some-css-tricks .hover-shadow-box-animation:focus,
+.page--some-css-tricks .hover-shadow-box-animation:active {
+  box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+  transform: scale(1.2); }
+
+.page--some-css-tricks .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: gold; }
+
+.page--some-css-tricks .hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out; }
+
+.page--some-css-tricks .hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left; }
+
+.page--some-css-tricks .ripple-loader {
+  position: relative;
+  width: 64px;
+  height: 64px; }
+
+.page--some-css-tricks .ripple-loader div {
+  position: absolute;
+  border: 4px solid #76ff03;
+  border-radius: 50%;
+  -webkit-animation: ripple-loader 1s ease-out infinite;
+          animation: ripple-loader 1s ease-out infinite; }
+
+.page--some-css-tricks .ripple-loader div:nth-child(2) {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; }
+
+@-webkit-keyframes ripple-loader {
+  0% {
+    top: 32px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  100% {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    opacity: 0; } }
+
+@keyframes ripple-loader {
+  0% {
+    top: 32px;
+    left: 32px;
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  100% {
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    opacity: 0; } }
+
+.page--some-css-tricks .unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: gold; }
+
+.page--some-css-tricks .reference {
+  position: relative;
+  background: tomato;
+  width: 100px;
+  height: 100px; }
+
+.page--some-css-tricks .popout-menu {
+  position: absolute;
+  visibility: hidden;
+  left: 100%;
+  background: #333;
+  color: gold;
+  padding: 15px; }
+
+.page--some-css-tricks .reference:hover > .popout-menu,
+.page--some-css-tricks .reference:focus > .popout-menu,
+.page--some-css-tricks .reference:focus-within > .popout-menu {
+  visibility: visible; }
+
+.page--some-css-tricks span {
+  padding: 0 1rem;
+  transition: opacity 0.2s;
+  color: gold; }
+
+.page--some-css-tricks .sibling-fade:hover span:not(:hover) {
+  opacity: 0.5; }
+
+.page--some-css-tricks .truncate-text-multiline {
+  overflow: hidden;
+  display: block;
+  height: 109.2px;
+  margin: 0 auto;
+  font-size: 26px;
+  line-height: 1.4;
+  width: 400px;
+  position: relative; }
+
+.page--some-css-tricks .truncate-text-multiline:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 36.4px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #2f2e26 50%); }
+
+.page--some-css-tricks .truncate-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 200px;
+  color: gold; }
+
+.page--some-css-tricks .container {
+  position: relative;
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #dddddd;
+  margin-top: 20px;
+  color: gold; }
+
+.page--some-css-tricks .container:before,
+.page--some-css-tricks .container:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 19px;
+  border: 11px solid transparent;
+  border-bottom-color: #dddddd; }
+
+.page--some-css-tricks .container:after {
+  left: 20px;
+  border: 10px solid transparent;
+  border-bottom-color: #ffffff; }
+
+.page--some-css-tricks ::-moz-selection {
+  background: aquamarine;
+  color: black; }
+
+.page--some-css-tricks ::selection {
+  background: aquamarine;
+  color: black; }
+
+.page--some-css-tricks .custom-text-selection::-moz-selection {
+  background: deeppink;
+  color: white; }
+
+.page--some-css-tricks .custom-text-selection::selection {
+  background: deeppink;
+  color: white; }
+
+.page--some-css-tricks .dynamic-shadow {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(75deg, #6d78ff, #00ffb8);
+  z-index: 1; }
+
+.page--some-css-tricks .dynamic-shadow::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  top: 0.5rem;
+  -webkit-filter: blur(0.4rem);
+          filter: blur(0.4rem);
+  opacity: 0.7;
+  z-index: -1; }
+
+.page--some-css-tricks .container {
+  margin: 40px auto;
+  max-width: 700px; }
+
+.page--some-css-tricks .element {
+  padding: 20px;
+  height: 300px;
+  width: 100%;
+  background-color: skyblue;
+  box-sizing: border-box; }
+
+.page--some-css-tricks .element p {
+  text-align: center;
+  color: white;
+  font-size: 3em; }
+
+.page--some-css-tricks .element:-ms-fullscreen p {
+  visibility: visible; }
+
+.page--some-css-tricks .element:-webkit-full-screen {
+  background-color: #e4708a;
+  width: 100vw;
+  height: 100vh; }
+
+.page--some-css-tricks .element:-ms-fullscreen {
+  background-color: #e4708a;
+  width: 100vw;
+  height: 100vh; }
+
+.page--some-css-tricks .element:fullscreen {
+  background-color: #e4708a;
+  width: 100vw;
+  height: 100vh; }
+
+.page--some-css-tricks .gradient-text {
+  background: -webkit-linear-gradient(pink, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; }
+
+.page--some-css-tricks .mouse-cursor-gradient-tracking {
+  position: relative;
+  background: #7983ff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden; }
+
+.page--some-css-tricks .mouse-cursor-gradient-tracking span {
+  position: relative; }
+
+.page--some-css-tricks .mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, pink, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease; }
+
+.page--some-css-tricks .mouse-cursor-gradient-tracking:hover::before {
+  --size: 200px; }
+
+.page--some-css-tricks .overflow-scroll-gradient {
+  position: relative;
+  color: #2f2e26; }
+
+.page--some-css-tricks .overflow-scroll-gradient::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 250px;
+  height: 25px;
+  background: linear-gradient(rgba(255, 255, 255, 0.001), white);
+  /* transparent keyword is broken in Safari */
+  pointer-events: none; }
+
+.page--some-css-tricks .overflow-scroll-gradient__scroller {
+  overflow-y: scroll;
+  background: white;
+  width: 240px;
+  height: 200px;
+  padding: 15px;
+  line-height: 1.2; }
+
+.page--some-css-tricks .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: all 0.3s;
+  cursor: pointer; }
+
+.page--some-css-tricks .switch::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background-color: white;
+  top: 1px;
+  left: 1px;
+  transition: all 0.3s; }
+
+.page--some-css-tricks input[type='checkbox']:checked + .switch::after {
+  transform: translateX(20px); }
+
+.page--some-css-tricks input[type='checkbox']:checked + .switch {
+  background-color: #7983ff; }
+
+.page--some-css-tricks .offscreen {
+  position: absolute;
+  left: -9999px; }
+
+.page--some-css-tricks .triangle {
+  width: 0;
+  height: 0;
+  border-top: 20px solid gold;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent; }

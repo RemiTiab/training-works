@@ -1,0 +1,127 @@
+include ../partials/components/header.pug
+<div class="page page--some-css-tricks">
+  <div class="container__tricks">
+    <div class="trick">
+      <h2 class="trick__subtitle">Bouncing Loader</h2>
+      <div class="bouncing-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Button Border Animation</h2>
+      <div class="button-border"><button class="button">Submit</button></div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Donut Spinner</h2>
+      <div class="donut"></div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Height Transition</h2>
+      <div class="trigger">
+        Hover me to see a height transition.
+        <div class="el">Hello World, this trick is very cool.</div>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Hover shadow box animation</h2>
+      <p class="hover-shadow-box-animation">Hover me !</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Hover underline animation</h2>
+      <p class="hover-underline-animation">Hover this text to see the effect!</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Pulse loader</h2>
+      <div class="ripple-loader">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Disable Selection</h2>
+      <p>You can select me.</p>
+      <p class="unselectable">You can't select me!</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Pop'out Menu</h2>
+      <div class="reference" tabindex="0"><div class="popout-menu">Surprise Menu !</div></div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Cibling Fade</h2>
+      <div class="sibling-fade">
+        <span>Item 1</span> <span>Item 2</span> <span>Item 3</span> <span>Item 4</span>
+        <span>Item 5</span> <span>Item 6</span>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Truncate text multiline</h2>
+      <p class="truncate-text-multiline">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        labore et.
+      </p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Truncate text</h2>
+      <p class="truncate-text">If I exceed one line's width, I will be truncated.</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Border with top triangle</h2>
+      <div class="container">
+        Border with top triangle
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Custom text selection</h2>
+      <p class="custom-text-selection">Select some of this text.</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Dynamic Shadow</h2>
+      <div class="dynamic-shadow"></div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Fullscreen Animation</h2>
+      <div class="container">
+        <p><em>Click the button below to enter the element into fullscreen mode. </em></p>
+        <div class="element" id="element"><p>I change color in fullscreen mode!</p></div>
+        <br />
+        <button onclick="var el = document.getElementById('element'); el.requestFullscreen();">
+          Go Full Screen!
+        </button>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Gradient text</h2>
+      <p class="gradient-text">Hello CSS Tricks !</p>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Mouse cursor gradient tracking</h2>
+      <button class="mouse-cursor-gradient-tracking"><span>Hover me</span></button>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Overflow scroll gradient</h2>
+      <div class="overflow-scroll-gradient">
+        <div class="overflow-scroll-gradient__scroller">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Iure id exercitationem nulla qui repellat laborum vitae, <br />
+          molestias tempora velit natus. Quas, assumenda nisi. <br />
+          Quisquam enim qui iure, consequatur velit sit? <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Iure id exercitationem nulla qui repellat laborum vitae, <br />
+          molestias tempora velit natus. Quas, assumenda nisi. <br />
+          Quisquam enim qui iure, consequatur velit sit?
+        </div>
+      </div>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Toggle switch</h2>
+      <input type="checkbox" id="toggle" class="offscreen" /> <label for="toggle" class="switch"></label>
+    </div>
+    <div class="trick">
+      <h2 class="trick__subtitle">Triangle Shape only CSS</h2>
+      <div class="triangle"></div>
+    </div>
+  </div>
+</div>
+include ../partials/components/footer.pug
