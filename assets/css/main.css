@@ -516,8 +516,11 @@ body {
   justify-items: center;
   align-content: center;
   margin-bottom: 0.9375rem; }
-  .libraries .library .source, .libraries .api .source, .libraries .codepen .source, .libraries .other .source, .apis .library .source, .apis .api .source, .apis .codepen .source, .apis .other .source, .codepens .library .source, .codepens .api .source, .codepens .codepen .source, .codepens .other .source, .others .library .source, .others .api .source, .others .codepen .source, .others .other .source {
+  .libraries .library__title, .libraries .api__title, .libraries .codepen__title, .libraries .other__title, .apis .library__title, .apis .api__title, .apis .codepen__title, .apis .other__title, .codepens .library__title, .codepens .api__title, .codepens .codepen__title, .codepens .other__title, .others .library__title, .others .api__title, .others .codepen__title, .others .other__title {
     text-align: center; }
+  .libraries .library .source, .libraries .api .source, .libraries .codepen .source, .libraries .other .source, .apis .library .source, .apis .api .source, .apis .codepen .source, .apis .other .source, .codepens .library .source, .codepens .api .source, .codepens .codepen .source, .codepens .other .source, .others .library .source, .others .api .source, .others .codepen .source, .others .other .source {
+    text-align: center;
+    color: plum; }
 
 /* 5. Components */
 .header {

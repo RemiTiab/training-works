@@ -23,8 +23,13 @@
     align-content: center;
     margin-bottom: 0.9375rem; // 15px
 
+    &__title {
+      text-align: center;
+    }
+
     .source {
       text-align: center;
+      color: $plum-color;
     }
   }
 }

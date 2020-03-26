@@ -25,6 +25,11 @@ app.get('/libraries-1', function(req, res) {
   res.render('libraries-1', { pageTitle: 'Countup.js' });
 });
 
+// Lottie animation
+app.get('/libraries-2', function(req, res) {
+  res.render('libraries-2', { pageTitle: 'Lottie animation' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {

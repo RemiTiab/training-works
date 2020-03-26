@@ -6,6 +6,8 @@ import { ready } from './helpers/document-ready';
 import './libraries/particles';
 // Countup.js
 import { launchCountUp } from './libraries/countUp';
+// Lottie animation
+import { launchLottieAnimation } from './libraries/lottie-animation/lottie-animation'
 
 /* Import Codepens */
 // Dynamic Timer
@@ -25,6 +27,8 @@ ready(function() {
   /* Setup Libraries */
   // Countup.js
   if (document.querySelector('.page--countup-js') !== null) launchCountUp();
+  // Lotie animation
+  if (document.querySelector('.page--lottie-animation') !== null) launchLottieAnimation();
 
   /* Setup Codepens */
   // Dynamic Timer
