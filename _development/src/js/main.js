@@ -7,11 +7,13 @@ import './libraries/particles';
 // Countup.js
 import { launchCountUp } from './libraries/countUp';
 // Lottie animation
-import { launchLottieAnimation } from './libraries/lottie-animation/lottie-animation'
+import { launchLottieAnimation } from './libraries/lottie-animation/lottie-animation';
+// ScrollMagic.js
+import { launchScrollMagic } from './libraries/scrollmagic';
 
 /* Import Codepens */
 // Dynamic Timer
-import { launchDynamicTimer } from './codepens/dynamic-timer'
+import { launchDynamicTimer } from './codepens/dynamic-timer';
 
 /* Import Apis */
 // Intersection-observer
@@ -28,11 +30,15 @@ ready(function() {
   // Countup.js
   if (document.querySelector('.page--countup-js') !== null) launchCountUp();
   // Lotie animation
-  if (document.querySelector('.page--lottie-animation') !== null) launchLottieAnimation();
+  if (document.querySelector('.page--lottie-animation') !== null)
+    launchLottieAnimation();
+  // ScrollMagic.js
+  if (document.querySelector('.page--scrollmagic-js') !== null) launchScrollMagic();
 
   /* Setup Codepens */
   // Dynamic Timer
-  if (document.querySelector('.page--dynamic-timer') !== null) launchDynamicTimer();
+  if (document.querySelector('.page--dynamic-timer') !== null)
+    launchDynamicTimer();
 
   /* Setup Apis */
   // Intersection-observer

@@ -1,4 +1,4 @@
-# training-works
+# TRAINING WORKS
 Training to configure Libraries, Api's, Codepens and Others.
 
 ## Start development
@@ -16,6 +16,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Particles.js (https://vincentgarreau.com/particles.js/)
 - Countup.js (https://inorganik.github.io/countUp.js/)
 - Lottie animation (https://airbnb.io/lottie/#/)
+- ScrollMagic.js (https://scrollmagic.io/)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

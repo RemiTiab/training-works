@@ -30,6 +30,11 @@ app.get('/libraries-2', function(req, res) {
   res.render('libraries-2', { pageTitle: 'Lottie animation' });
 });
 
+// ScrollMagic.js
+app.get('/libraries-3', function(req, res) {
+  res.render('libraries-3', { pageTitle: 'ScrollMagic.js' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {

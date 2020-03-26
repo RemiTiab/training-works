@@ -350,11 +350,11 @@ template {
 @charset "UTF-8";
 /* 1. Configuration and helpers */
 /* Grid Variables */
-.page--intersection-observer .main-content__section {
+.page--scrollmagic-js .parallax__block-content, .page--intersection-observer .main-content__section {
   display: flex;
   flex-direction: row; }
 
-.page--countup-js .container__numbers, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
+.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
   display: flex;
   flex-direction: column; }
 
@@ -578,6 +578,50 @@ body {
 .page--countup-js .number {
   font-size: 150px;
   color: rgba(255, 217, 0, 0.767); }
+
+.page--scrollmagic-js .parallax__container {
+  align-items: center;
+  color: white; }
+
+.page--scrollmagic-js .parallax__block {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden; }
+  .page--scrollmagic-js .parallax__block:nth-child(even) {
+    background: rgba(255, 255, 255, 0.2); }
+  .page--scrollmagic-js .parallax__block:nth-of-type(1) {
+    border-radius: 20px 20px 0px 0px;
+    background-color: black; }
+  .page--scrollmagic-js .parallax__block:nth-last-of-type(1) {
+    border-radius: 0 0 20px 20px; }
+  .page--scrollmagic-js .parallax__block-title {
+    position: absolute;
+    top: 30px; }
+  .page--scrollmagic-js .parallax__block-content {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; }
+    .page--scrollmagic-js .parallax__block-content-text {
+      font-size: 2.25rem; }
+  .page--scrollmagic-js .parallax__block:nth-child(odd) .page--scrollmagic-js .parallax__block-content {
+    flex-direction: row-reverse; }
+
+.page--scrollmagic-js .background__one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/img/scrollmagic-js/bg-paralax.jpg") no-repeat center center/cover; }
+
+.page--scrollmagic-js .background__two {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/img/scrollmagic-js/bg-paralax-phone.png") no-repeat center center/cover; }
 
 /* 6. Page Codepens */
 :root {

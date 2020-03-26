@@ -1,0 +1,72 @@
+$font-sizes-content-text: (
+  null: 2.25rem /*36px*/
+);
+
+.page--scrollmagic-js {
+  .parallax__container {
+    @extend %flex-column;
+    align-items: center;
+    color: $white-color;
+  }
+
+  .parallax__block {
+    @extend %flex-column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+
+    &:nth-child(even) {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    &:nth-of-type(1) {
+      border-radius: 20px 20px 0px 0px;
+      background-color: black;
+    }
+
+    &:nth-last-of-type(1) {
+      border-radius: 0 0 20px 20px;
+    }
+
+    &-title {
+      position: absolute;
+      top: 30px;
+    }
+
+    &-content {
+      @extend %flex-row;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+
+      &-text {
+        @include font-size($font-sizes-content-text);
+      }
+    }
+
+    &:nth-child(odd) &-content {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .background__one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/img/scrollmagic-js/bg-paralax.jpg') no-repeat center center /
+      cover;
+  }
+
+  .background__two {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/img/scrollmagic-js/bg-paralax-phone.png') no-repeat center
+      center / cover;
+  }
+}
