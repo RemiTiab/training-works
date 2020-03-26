@@ -1,0 +1,97 @@
+.page--shave-js {
+  .title {
+    text-align: center;
+    color: gold;
+    margin-bottom: 25px;
+
+    &:not(:first-of-type) {
+      margin-top: 25px;
+    }
+  }
+
+  .block {
+    background: rgba(255, 217, 0, 0.123);
+    padding: 30px 50px;
+
+    @extend %flex-column;
+    align-items: center;
+
+    &__title {
+      color: $white-color;
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+
+    &__content {
+      color: $white-color;
+      margin-bottom: 30px;
+
+      &.is-trimmed {
+        color: gold;
+      }
+    }
+
+    &__button {
+      border: solid 1px $black-color;
+      border-radius: 10px;
+      background: gold;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .wrapper__multiples {
+    @extend %flex-column;
+    align-items: center;
+
+    .multi-blocks {
+      @extend %flex-row;
+      margin-bottom: 25px;
+    }
+  }
+
+  .wrapper__auto {
+    @extend %flex-column;
+    align-items: center;
+
+    .auto-blocks {
+      @extend %flex-row;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+  }
+
+  .auto-block {
+    background: rgba(255, 217, 0, 0.123);
+    padding: 30px 50px;
+    max-height: 400px;
+    overflow: hidden;
+    width: calc(100% / 3);
+
+    @extend %flex-column;
+    align-items: center;
+
+    &__title {
+      color: $white-color;
+      margin-bottom: 30px;
+      text-decoration: underline;
+    }
+
+    &__content {
+      color: $white-color;
+      margin-bottom: 30px;
+
+      &.is-trimmed {
+        color: gold;
+      }
+    }
+
+    &__button {
+      border: solid 1px $black-color;
+      border-radius: 10px;
+      background: gold;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+}

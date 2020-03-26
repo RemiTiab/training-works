@@ -17,6 +17,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Countup.js (https://inorganik.github.io/countUp.js/)
 - Lottie animation (https://airbnb.io/lottie/#/)
 - ScrollMagic.js (https://scrollmagic.io/)
+- Shave.js (https://dollarshaveclub.github.io/shave/)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

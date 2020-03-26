@@ -10,6 +10,12 @@ import { launchCountUp } from './libraries/countUp';
 import { launchLottieAnimation } from './libraries/lottie-animation/lottie-animation';
 // ScrollMagic.js
 import { launchScrollMagic } from './libraries/scrollmagic';
+// Shave.js
+import {
+  LaunchRunShave,
+  launchAutoShave,
+  launchMultiShave
+} from './libraries/shave';
 
 /* Import Codepens */
 // Dynamic Timer
@@ -33,7 +39,11 @@ ready(function() {
   if (document.querySelector('.page--lottie-animation') !== null)
     launchLottieAnimation();
   // ScrollMagic.js
-  if (document.querySelector('.page--scrollmagic-js') !== null) launchScrollMagic();
+  if (document.querySelector('.page--scrollmagic-js') !== null)
+    launchScrollMagic();
+  // Shave.js
+  if (document.querySelector('.page--shave-js') !== null)
+    LaunchRunShave(), launchAutoShave(), launchMultiShave();
 
   /* Setup Codepens */
   // Dynamic Timer

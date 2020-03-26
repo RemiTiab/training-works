@@ -350,11 +350,11 @@ template {
 @charset "UTF-8";
 /* 1. Configuration and helpers */
 /* Grid Variables */
-.page--scrollmagic-js .parallax__block-content, .page--intersection-observer .main-content__section {
+.page--scrollmagic-js .parallax__block-content, .page--shave-js .wrapper__multiples .multi-blocks, .page--shave-js .wrapper__auto .auto-blocks, .page--intersection-observer .main-content__section {
   display: flex;
   flex-direction: row; }
 
-.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
+.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--shave-js .block, .page--shave-js .wrapper__multiples, .page--shave-js .wrapper__auto, .page--shave-js .auto-block, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
   display: flex;
   flex-direction: column; }
 
@@ -622,6 +622,67 @@ body {
   width: 100%;
   height: 100%;
   background: url("/img/scrollmagic-js/bg-paralax-phone.png") no-repeat center center/cover; }
+
+.page--shave-js .title {
+  text-align: center;
+  color: gold;
+  margin-bottom: 25px; }
+  .page--shave-js .title:not(:first-of-type) {
+    margin-top: 25px; }
+
+.page--shave-js .block {
+  background: rgba(255, 217, 0, 0.123);
+  padding: 30px 50px;
+  align-items: center; }
+  .page--shave-js .block__title {
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: underline; }
+  .page--shave-js .block__content {
+    color: white;
+    margin-bottom: 30px; }
+    .page--shave-js .block__content.is-trimmed {
+      color: gold; }
+  .page--shave-js .block__button {
+    border: solid 1px black;
+    border-radius: 10px;
+    background: gold;
+    padding: 10px;
+    cursor: pointer; }
+
+.page--shave-js .wrapper__multiples {
+  align-items: center; }
+  .page--shave-js .wrapper__multiples .multi-blocks {
+    margin-bottom: 25px; }
+
+.page--shave-js .wrapper__auto {
+  align-items: center; }
+  .page--shave-js .wrapper__auto .auto-blocks {
+    margin-bottom: 25px;
+    width: 100%; }
+
+.page--shave-js .auto-block {
+  background: rgba(255, 217, 0, 0.123);
+  padding: 30px 50px;
+  max-height: 400px;
+  overflow: hidden;
+  width: calc(100% / 3);
+  align-items: center; }
+  .page--shave-js .auto-block__title {
+    color: white;
+    margin-bottom: 30px;
+    text-decoration: underline; }
+  .page--shave-js .auto-block__content {
+    color: white;
+    margin-bottom: 30px; }
+    .page--shave-js .auto-block__content.is-trimmed {
+      color: gold; }
+  .page--shave-js .auto-block__button {
+    border: solid 1px black;
+    border-radius: 10px;
+    background: gold;
+    padding: 10px;
+    cursor: pointer; }
 
 /* 6. Page Codepens */
 :root {

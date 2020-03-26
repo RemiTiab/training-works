@@ -35,6 +35,11 @@ app.get('/libraries-3', function(req, res) {
   res.render('libraries-3', { pageTitle: 'ScrollMagic.js' });
 });
 
+// Shave.js
+app.get('/libraries-4', function(req, res) {
+  res.render('libraries-4', { pageTitle: 'Shave.js' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {
