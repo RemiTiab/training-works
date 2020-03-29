@@ -22,6 +22,8 @@ import {
 import { launchDynamicTimer } from './codepens/dynamic-timer';
 // Cross Color Text Reveal
 import { launchCrossColorTextReveal } from './codepens/cross-color-text-reveal';
+// Responsive Blog Card Slider
+import { launchResponsiveBlogCardSlider } from './codepens/responsive-blog-card-slider';
 
 /* Import Apis */
 // Intersection-observer
@@ -56,6 +58,9 @@ ready(function() {
   // Cross Color Text Reveal
   if (document.querySelector('.page--cross-color-text-reveal') !== null)
     launchCrossColorTextReveal();
+  // Responsive Blog Card Slider
+  if (document.querySelector('.page--responsive-blog-card-slider') !== null)
+    launchResponsiveBlogCardSlider();
 
   /* Setup Apis */
   // Intersection-observer

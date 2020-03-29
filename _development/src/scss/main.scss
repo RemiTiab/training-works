@@ -10,6 +10,7 @@
 @import '../../node_modules/normalize.css/normalize.css';
 
 /* 2. Vendors */
+@import '../../node_modules/swiper/css/swiper.css';
 
 /* 3. Base stuff */
 @import '3-base/base';
@@ -39,6 +40,7 @@
 /* 6. Page Codepens */
 @import '6-pages/codepens/dynamic-timer/dynamic-timer';
 @import '6-pages/codepens/cross-color-text-reveal/cross-color-text-reveal';
+@import '6-pages/codepens/responsive-blog-card-slider/responsive-blog-card-slider';
 
 /* 6. Page Apis */
 @import '6-pages/apis/intersection-observer/intersection-observer';

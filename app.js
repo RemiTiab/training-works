@@ -49,6 +49,10 @@ app.get('/codepens-0', function(req, res) {
 app.get('/codepens-1', function(req, res) {
   res.render('codepens-1', { pageTitle: 'Cross Color Text Reveal' });
 });
+// Responsive Blog Card Slider
+app.get('/codepens-2', function(req, res) {
+  res.render('codepens-2', { pageTitle: 'Responsive Blog Card Slider' });
+});
 
 /* Apis */
 // Intersection-observer
