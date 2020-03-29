@@ -24,6 +24,8 @@ import { launchDynamicTimer } from './codepens/dynamic-timer';
 import { launchCrossColorTextReveal } from './codepens/cross-color-text-reveal';
 // Responsive Blog Card Slider
 import { launchResponsiveBlogCardSlider } from './codepens/responsive-blog-card-slider';
+// Responsive News Card Slider
+import { launchResponsiveNewsCardSlider } from './codepens/responsive-news-card-slider';
 
 /* Import Apis */
 // Intersection-observer
@@ -61,6 +63,9 @@ ready(function() {
   // Responsive Blog Card Slider
   if (document.querySelector('.page--responsive-blog-card-slider') !== null)
     launchResponsiveBlogCardSlider();
+  // Responsive News Card Slider
+  if (document.querySelector('.page--responsive-news-card-slider') !== null)
+    launchResponsiveNewsCardSlider();
 
   /* Setup Apis */
   // Intersection-observer

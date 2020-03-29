@@ -53,6 +53,10 @@ app.get('/codepens-1', function(req, res) {
 app.get('/codepens-2', function(req, res) {
   res.render('codepens-2', { pageTitle: 'Responsive Blog Card Slider' });
 });
+// Responsive News Card Slider
+app.get('/codepens-3', function(req, res) {
+  res.render('codepens-3', { pageTitle: 'Responsive News Card Slider' });
+});
 
 /* Apis */
 // Intersection-observer
