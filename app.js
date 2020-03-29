@@ -45,6 +45,10 @@ app.get('/libraries-4', function(req, res) {
 app.get('/codepens-0', function(req, res) {
   res.render('codepens-0', { pageTitle: 'Dynamic Timer' });
 });
+// Cross Color Text Reveal
+app.get('/codepens-1', function(req, res) {
+  res.render('codepens-1', { pageTitle: 'Cross Color Text Reveal' });
+});
 
 /* Apis */
 // Intersection-observer
@@ -56,4 +60,9 @@ app.get('/apis-0', function(req, res) {
 // Some CSS Tricks
 app.get('/others-0', function(req, res) {
   res.render('others-0', { pageTitle: 'Some CSS Tricks' });
+});
+
+// Header Background Scroll Effect
+app.get('/others-1', function(req, res) {
+  res.render('others-1', { pageTitle: 'Header Background Scroll Effect' });
 });

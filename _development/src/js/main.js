@@ -20,6 +20,8 @@ import {
 /* Import Codepens */
 // Dynamic Timer
 import { launchDynamicTimer } from './codepens/dynamic-timer';
+// Cross Color Text Reveal
+import { launchCrossColorTextReveal } from './codepens/cross-color-text-reveal';
 
 /* Import Apis */
 // Intersection-observer
@@ -28,6 +30,8 @@ import { launchObserver } from './apis/intersection-observer';
 /* Import Others */
 // Some CSS Tricks
 import { launchSomeCssTricks } from './others/some-css-tricks';
+// Header Background Scroll Effect
+import { launchHeaderBackgroundScrollEffect } from './others/header-background-scroll-effect';
 
 ready(function() {
   /* Setup General */
@@ -49,6 +53,9 @@ ready(function() {
   // Dynamic Timer
   if (document.querySelector('.page--dynamic-timer') !== null)
     launchDynamicTimer();
+  // Cross Color Text Reveal
+  if (document.querySelector('.page--cross-color-text-reveal') !== null)
+    launchCrossColorTextReveal();
 
   /* Setup Apis */
   // Intersection-observer
@@ -59,4 +66,7 @@ ready(function() {
   // Some CSS Tricks
   if (document.querySelector('.page--some-css-tricks') !== null)
     launchSomeCssTricks();
+  // Header Background Scroll Effect
+  if (document.querySelector('.page--header-background-scroll-effect') !== null)
+    launchHeaderBackgroundScrollEffect();
 });

@@ -498,7 +498,6 @@ body {
 /* 4. Layout-related sections */
 .body {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
   position: relative; }
 
@@ -507,8 +506,10 @@ body {
   height: 100%; }
 
 .container {
-  margin: 50px 150px;
   height: 100%; }
+
+.page {
+  padding: 3.125rem 0; }
 
 .libraries .library, .libraries .api, .libraries .codepen, .libraries .other, .apis .library, .apis .api, .apis .codepen, .apis .other, .codepens .library, .codepens .api, .codepens .codepen, .codepens .other, .others .library, .others .api, .others .codepen, .others .other {
   display: flex;
@@ -568,60 +569,63 @@ body {
       color: rgba(255, 217, 0, 0.767); }
 
 /* 6. Page Libraries */
-.page--countup-js .container__numbers {
-  background: #222831;
-  height: 55vh;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px; }
+.page--particles-js {
+  padding: 0; }
 
-.page--countup-js .number {
-  font-size: 150px;
-  color: rgba(255, 217, 0, 0.767); }
-
-.page--scrollmagic-js .parallax__container {
-  align-items: center;
-  color: white; }
-
-.page--scrollmagic-js .parallax__block {
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background: rgba(0, 0, 0, 0.2);
-  position: relative;
-  overflow: hidden; }
-  .page--scrollmagic-js .parallax__block:nth-child(even) {
-    background: rgba(255, 255, 255, 0.2); }
-  .page--scrollmagic-js .parallax__block:nth-of-type(1) {
-    border-radius: 20px 20px 0px 0px;
-    background-color: black; }
-  .page--scrollmagic-js .parallax__block:nth-last-of-type(1) {
-    border-radius: 0 0 20px 20px; }
-  .page--scrollmagic-js .parallax__block-title {
-    position: absolute;
-    top: 30px; }
-  .page--scrollmagic-js .parallax__block-content {
-    justify-content: space-between;
+.page--countup-js {
+  padding: 135px 0; }
+  .page--countup-js .container__numbers {
+    background: #222831;
+    height: 55vh;
     align-items: center;
-    width: 90%; }
-    .page--scrollmagic-js .parallax__block-content-text {
-      font-size: 2.25rem; }
-  .page--scrollmagic-js .parallax__block:nth-child(odd) .page--scrollmagic-js .parallax__block-content {
-    flex-direction: row-reverse; }
+    justify-content: center;
+    border-radius: 10px; }
+  .page--countup-js .number {
+    font-size: 150px;
+    color: rgba(255, 217, 0, 0.767); }
 
-.page--scrollmagic-js .background__one {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("/img/scrollmagic-js/bg-paralax.jpg") no-repeat center center/cover; }
-
-.page--scrollmagic-js .background__two {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("/img/scrollmagic-js/bg-paralax-phone.png") no-repeat center center/cover; }
+.page--scrollmagic-js {
+  padding: 0; }
+  .page--scrollmagic-js .parallax__container {
+    align-items: center;
+    color: white; }
+  .page--scrollmagic-js .parallax__block {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden; }
+    .page--scrollmagic-js .parallax__block:nth-child(even) {
+      background: rgba(255, 255, 255, 0.2); }
+    .page--scrollmagic-js .parallax__block:nth-of-type(1) {
+      border-radius: 20px 20px 0px 0px;
+      background-color: black; }
+    .page--scrollmagic-js .parallax__block:nth-last-of-type(1) {
+      border-radius: 0 0 20px 20px; }
+    .page--scrollmagic-js .parallax__block-title {
+      position: absolute;
+      top: 30px; }
+    .page--scrollmagic-js .parallax__block-content {
+      justify-content: space-between;
+      align-items: center;
+      width: 90%; }
+      .page--scrollmagic-js .parallax__block-content-text {
+        font-size: 2.25rem; }
+    .page--scrollmagic-js .parallax__block:nth-child(odd) .page--scrollmagic-js .parallax__block-content {
+      flex-direction: row-reverse; }
+  .page--scrollmagic-js .background__one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/libraries/img/scrollmagic-js/bg-paralax.jpg") no-repeat center center/cover; }
+  .page--scrollmagic-js .background__two {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("/libraries/img/scrollmagic-js/bg-paralax-phone.png") no-repeat center center/cover; }
 
 .page--shave-js .title {
   text-align: center;
@@ -746,6 +750,41 @@ body {
     transform: translateZ(-100px) rotateX(-180deg); }
   .page--dynamic-timer .show-bottom {
     transform: translateZ(-100px) rotateX(-270deg); }
+
+.page--cross-color-text-reveal {
+  margin: 0;
+  min-height: 3000px;
+  font-family: 'Montserrat', sans-serif; }
+  .page--cross-color-text-reveal .outer-container {
+    max-width: 600px;
+    margin: auto;
+    width: 90%;
+    padding: 200px 0px;
+    position: relative; }
+  .page--cross-color-text-reveal .image-container {
+    padding-bottom: 100%;
+    background: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    background-size: cover;
+    background-position: center; }
+  .page--cross-color-text-reveal .section-title {
+    margin: 0;
+    font-size: 64px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: -30%;
+    transform: translateY(-50%);
+    z-index: 1;
+    white-space: nowrap; }
+    .page--cross-color-text-reveal .section-title.on-dark {
+      color: white; }
+    .page--cross-color-text-reveal .section-title span {
+      position: relative;
+      display: block; }
 
 /* 6. Page Apis */
 .page--intersection-observer {
@@ -1211,3 +1250,14 @@ body {
   border-top: 20px solid gold;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent; }
+
+.page--header-background-scroll-effect {
+  padding: 0; }
+  .page--header-background-scroll-effect .header-paralax {
+    background-image: url("https://images.unsplash.com/photo-1439901948849-20b62e62a557?dpr=1&auto=format&crop=entropy&fit=crop&w=1199&h=585&q=80");
+    background-size: cover;
+    width: 100%;
+    height: 100%; }
+  .page--header-background-scroll-effect .header-paralax img {
+    width: 100%;
+    margin-bottom: 250px; }

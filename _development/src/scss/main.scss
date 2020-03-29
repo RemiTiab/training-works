@@ -31,15 +31,18 @@
 @import '6-pages/home';
 
 /* 6. Page Libraries */
+@import '6-pages/libraries/particles.js/particles';
 @import '6-pages/libraries/countup.js/countup';
 @import '6-pages/libraries/scrollmagic.js/scrollmagic';
 @import '6-pages/libraries/shave.js/shave';
 
 /* 6. Page Codepens */
 @import '6-pages/codepens/dynamic-timer/dynamic-timer';
+@import '6-pages/codepens/cross-color-text-reveal/cross-color-text-reveal';
 
 /* 6. Page Apis */
 @import '6-pages/apis/intersection-observer/intersection-observer';
 
 /* 6. Page Others */
 @import '6-pages/others/some-css-tricks/some-css-tricks';
+@import '6-pages/others/header-background-scroll-effect/header-background-scroll-effect';

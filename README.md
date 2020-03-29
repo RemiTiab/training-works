@@ -21,9 +21,11 @@ Training to configure Libraries, Api's, Codepens and Others.
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)
+- Cross Color Text Reveal (https://codepen.io/ispykenny/pen/BaaYqYZ)
 
 ### Api's
 - Intersection-observer (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)
 
 ### Others
 - Some CSS Tricks
+- Header Background Scroll Effect

@@ -3,6 +3,7 @@ $font-sizes-content-text: (
 );
 
 .page--scrollmagic-js {
+  padding: 0;
   .parallax__container {
     @extend %flex-column;
     align-items: center;
@@ -58,7 +59,7 @@ $font-sizes-content-text: (
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/img/scrollmagic-js/bg-paralax.jpg') no-repeat center center /
+    background: url('/libraries/img/scrollmagic-js/bg-paralax.jpg') no-repeat center center /
       cover;
   }
 
@@ -66,7 +67,7 @@ $font-sizes-content-text: (
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/img/scrollmagic-js/bg-paralax-phone.png') no-repeat center
+    background: url('/libraries/img/scrollmagic-js/bg-paralax-phone.png') no-repeat center
       center / cover;
   }
 }

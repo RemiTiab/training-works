@@ -1,6 +1,5 @@
 .body {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
   position: relative;
 }
@@ -11,8 +10,11 @@
 }
 
 .container {
-  margin: 50px 150px;
   height: 100%;
+}
+
+.page {
+  padding: 3.125rem 0; // 50px
 }
 
 .libraries, .apis, .codepens, .others {
