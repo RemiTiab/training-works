@@ -55,6 +55,11 @@ app.get('/libraries-7', function(req, res) {
   res.render('libraries-7', { pageTitle: 'Glide.js' });
 });
 
+// Slick.js
+app.get('/libraries-8', function(req, res) {
+  res.render('libraries-8', { pageTitle: 'Slick.js' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {

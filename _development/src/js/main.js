@@ -22,6 +22,8 @@ import { launchTarteaucitron } from './libraries/tarteaucitron/tarteaucitron';
 import { launchHamburgers } from './libraries/hamburgers/hamburgers';
 // Glide.js
 import { launchGlide } from './libraries/glide/glide';
+// Slick.js
+import { launchSlick } from './libraries/slick/slick';
 
 /* Import Codepens */
 // Dynamic Timer
@@ -65,8 +67,9 @@ ready(function () {
   if (document.querySelector('.page--hamburgers-js') !== null)
     launchHamburgers();
   // Glide.js
-  if (document.querySelector('.page--glide-js') !== null)
-    launchGlide();
+  if (document.querySelector('.page--glide-js') !== null) launchGlide();
+  // Slick.js
+  if (document.querySelector('.page--slick-js') !== null) launchSlick();
 
   /* Setup Codepens */
   // Dynamic Timer

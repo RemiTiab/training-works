@@ -1,0 +1,33 @@
+$font-sizes-carousel-dots: (
+  null: 1.5625rem //25px,
+);
+
+.slick-dots {
+  li button::before {
+    @include font-size($font-sizes-carousel-dots);
+    color: $white-color;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  &:before {
+    font-family: 'Open sans', sans-serif;
+  }
+}
+
+.slick-dots {
+  li {
+    button {
+      &:hover,
+      &:focus {
+      }
+      &:before {
+        font-family: 'Open sans', sans-serif;
+      }
+    }
+  }
+}
+
+.page--slick-js {
+}

@@ -21,6 +21,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Tarteaucitron.js (https://github.com/AmauriC/tarteaucitron.js)
 - Hamburgers.js (https://jonsuh.com/hamburgers/)
 - Glide.js (https://glidejs.com/)
+- Slick.js (https://kenwheeler.github.io/slick/)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

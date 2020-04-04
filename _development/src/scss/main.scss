@@ -14,9 +14,12 @@
 // Hamburgers.js
 @import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 @import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
-// glide.js
+// Glide.js
 @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+// Slick.js
+@import '../../node_modules/slick-carousel/slick/slick';
+@import '../../node_modules/slick-carousel/slick/slick-theme';
 
 /* 3. Base stuff */
 @import '3-base/base';
@@ -45,6 +48,7 @@
 @import '6-pages/libraries/tarteaucitron.js/tarteaucitron';
 @import '6-pages/libraries/hamburgers.js/hamburgers';
 @import '6-pages/libraries/glide.js/glide';
+@import '6-pages/libraries/slick.js/slick';
 
 /* 6. Page Codepens */
 @import '6-pages/codepens/dynamic-timer/dynamic-timer';

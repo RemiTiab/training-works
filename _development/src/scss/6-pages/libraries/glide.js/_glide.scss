@@ -2,20 +2,9 @@ $font-sizes-carousel-title: (
   null: 2.25rem /*36px*/
 );
 
-$font-sizes-carousel-dots: (
-  null: 1.5625rem //25px
-);
-
 .page--glide-js {
   text-align: center;
   padding-bottom: 160px;
-}
-
-.slick-dots {
-  li button::before {
-    @include font-size($font-sizes-carousel-dots);
-    color: $white-color;
-  }
 }
 
 // Carousel - slick.js
