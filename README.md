@@ -20,6 +20,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Shave.js (https://dollarshaveclub.github.io/shave/)
 - Tarteaucitron.js (https://github.com/AmauriC/tarteaucitron.js)
 - Hamburgers.js (https://jonsuh.com/hamburgers/)
+- Glide.js (https://glidejs.com/)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

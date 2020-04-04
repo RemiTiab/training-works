@@ -20,6 +20,8 @@ import {
 import { launchTarteaucitron } from './libraries/tarteaucitron/tarteaucitron';
 // Hamburgers.js
 import { launchHamburgers } from './libraries/hamburgers/hamburgers';
+// Glide.js
+import { launchGlide } from './libraries/glide/glide';
 
 /* Import Codepens */
 // Dynamic Timer
@@ -62,6 +64,9 @@ ready(function () {
   // Hamburgers.js
   if (document.querySelector('.page--hamburgers-js') !== null)
     launchHamburgers();
+  // Glide.js
+  if (document.querySelector('.page--glide-js') !== null)
+    launchGlide();
 
   /* Setup Codepens */
   // Dynamic Timer

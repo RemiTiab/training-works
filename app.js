@@ -50,6 +50,11 @@ app.get('/libraries-6', function(req, res) {
   res.render('libraries-6', { pageTitle: 'Hamburgers.js' });
 });
 
+// Glide.js
+app.get('/libraries-7', function(req, res) {
+  res.render('libraries-7', { pageTitle: 'Glide.js' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {
