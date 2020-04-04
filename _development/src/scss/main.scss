@@ -11,6 +11,9 @@
 
 /* 2. Vendors */
 @import '../../node_modules/swiper/css/swiper.css';
+// Hamburgers.js
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
 /* 3. Base stuff */
 @import '3-base/base';
@@ -36,6 +39,8 @@
 @import '6-pages/libraries/countup.js/countup';
 @import '6-pages/libraries/scrollmagic.js/scrollmagic';
 @import '6-pages/libraries/shave.js/shave';
+@import '6-pages/libraries/tarteaucitron.js/tarteaucitron';
+@import '6-pages/libraries/hamburgers.js/hamburgers';
 
 /* 6. Page Codepens */
 @import '6-pages/codepens/dynamic-timer/dynamic-timer';

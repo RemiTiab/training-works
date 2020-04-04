@@ -7,11 +7,25 @@
     <meta http-equiv="X-UA-Compatible", content="ie=edge">
     <link rel="stylesheet" href="/css/main.css" />
     <script type="text/javascript" src="/js/global.js" async></script>
+    <script type="text/javascript" src="/libraries/tarteaucitronjs/tarteaucitron.js"></script>
   </head>
   <body class="body">
     <header class="header">
       <button class="header__backhome"><a href="/" title="Retourner à l'accueil">Accueil</a></button>
       h1.header__title= pageTitle
+      <button class="header__hamburger hamburger hamburger--elastic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav__items">
+          <li class="header__nav__item">Home</li>
+          <li class="header__nav__item">Works</li>
+          <li class="header__nav__item">Projects</li>
+          <li class="header__nav__item">Contact</li>
+        </ul>
+      </nav>
     </header>
     <div class="wrapper">
       <div class="container">

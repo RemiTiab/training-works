@@ -14,8 +14,12 @@ import { launchScrollMagic } from './libraries/scrollmagic';
 import {
   LaunchRunShave,
   launchAutoShave,
-  launchMultiShave
+  launchMultiShave,
 } from './libraries/shave';
+// Tarteaucitron.js - Cookies manager
+import { launchTarteaucitron } from './libraries/tarteaucitron/tarteaucitron';
+// Hamburgers.js
+import { launchHamburgers } from './libraries/hamburgers/hamburgers';
 
 /* Import Codepens */
 // Dynamic Timer
@@ -37,7 +41,7 @@ import { launchSomeCssTricks } from './others/some-css-tricks';
 // Header Background Scroll Effect
 import { launchHeaderBackgroundScrollEffect } from './others/header-background-scroll-effect';
 
-ready(function() {
+ready(function () {
   /* Setup General */
 
   /* Setup Libraries */
@@ -52,6 +56,12 @@ ready(function() {
   // Shave.js
   if (document.querySelector('.page--shave-js') !== null)
     LaunchRunShave(), launchAutoShave(), launchMultiShave();
+  // Tarteaucitron.js - Cookies manager
+  if (document.querySelector('.page--tarteaucitron-js') !== null)
+    launchTarteaucitron();
+  // Hamburgers.js
+  if (document.querySelector('.page--hamburgers-js') !== null)
+    launchHamburgers();
 
   /* Setup Codepens */
   // Dynamic Timer

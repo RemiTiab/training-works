@@ -18,6 +18,8 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Lottie animation (https://airbnb.io/lottie/#/)
 - ScrollMagic.js (https://scrollmagic.io/)
 - Shave.js (https://dollarshaveclub.github.io/shave/)
+- Tarteaucitron.js (https://github.com/AmauriC/tarteaucitron.js)
+- Hamburgers.js (https://jonsuh.com/hamburgers/)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

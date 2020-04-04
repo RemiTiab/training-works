@@ -40,6 +40,16 @@ app.get('/libraries-4', function(req, res) {
   res.render('libraries-4', { pageTitle: 'Shave.js' });
 });
 
+// Tarteaucitron.js
+app.get('/libraries-5', function(req, res) {
+  res.render('libraries-5', { pageTitle: 'Tarteaucitron.js' });
+});
+
+// Hamburgers.js
+app.get('/libraries-6', function(req, res) {
+  res.render('libraries-6', { pageTitle: 'Hamburgers.js' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {

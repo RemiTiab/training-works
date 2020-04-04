@@ -1,0 +1,79 @@
+$font-sizes-nav-item: (
+  null: 1.875rem // 30px
+);
+
+.page--hamburgers-js {
+  text-align: center;
+  height: 75vh;
+}
+
+.header__nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  transform: translateX(300px);
+  text-align: center;
+  background: linear-gradient(
+    to top,
+    rgba(47, 46, 38, 0.9) 0%,
+    rgba(40, 49, 61, 0.9) 100%
+  );
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1s, transform .8s;
+
+  //@extend %flex-column;
+  justify-content: center;
+  align-items: center;
+
+  &.is-active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  &__items {
+  }
+
+  &__item {
+    @include font-size($font-sizes-nav-item);
+    color: $white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: 1em; //30px
+    }
+  }
+}
+
+
+.header__hamburger {
+  position: absolute;
+  top: 20%;
+  right: 10px;
+  display: none;
+
+  &:not(.is-active) {
+    .hamburger-inner {
+      &,
+      &::before,
+      &::after {
+        background-color: $white-color;
+      }
+    }
+  }
+
+  &.is-active {
+    .hamburger-inner {
+      &,
+      &::before,
+      &::after {
+        background-color: $gold-color;
+      }
+    }
+  }
+}
