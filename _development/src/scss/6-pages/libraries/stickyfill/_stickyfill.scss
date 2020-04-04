@@ -1,0 +1,39 @@
+.page--stickyfill {
+  height: 160vh;
+  text-align: center;
+}
+
+.container__sticky {
+  height: 100vh;
+  background: rgb(255, 217, 0);
+}
+
+.sticky {
+  @extend %flex-column;
+  align-items: center;
+  color: $white-color;
+  position: sticky;
+  top: 0px;
+  border: solid 10px rgba(255, 0, 0, 0.575);
+  background: plum;
+  padding: 10px;
+}
+
+.link {
+  color: $gold-color;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.gif {
+  display: block;
+  margin: auto;
+}
+
+// Also worth having a clearfix
+// .sticky:before,
+// .sticky:after {
+//     content: '';
+//     display: table;
+// }

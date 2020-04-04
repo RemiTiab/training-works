@@ -60,6 +60,11 @@ app.get('/libraries-8', function(req, res) {
   res.render('libraries-8', { pageTitle: 'Slick.js' });
 });
 
+// Stickyfill
+app.get('/libraries-9', function (req, res) {
+  res.render('libraries-9', { pageTitle: 'Stickyfill' });
+});
+
 /* Codepens */
 // Dynamic Timer
 app.get('/codepens-0', function(req, res) {

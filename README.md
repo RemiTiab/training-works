@@ -22,6 +22,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Hamburgers.js (https://jonsuh.com/hamburgers/)
 - Glide.js (https://glidejs.com/)
 - Slick.js (https://kenwheeler.github.io/slick/)
+- Stickyfill - Polyfill for CSS 'position: sticky' (https://github.com/wilddeer/stickyfill)
 
 ### CodePens
 - Dynamic Timer (https://codepen.io/magnificode/details/qQBBZg)

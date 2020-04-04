@@ -885,7 +885,7 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: row; }
 
-.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--shave-js .block, .page--shave-js .wrapper__multiples, .page--shave-js .wrapper__auto, .page--shave-js .auto-block, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
+.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--shave-js .block, .page--shave-js .wrapper__multiples, .page--shave-js .wrapper__auto, .page--shave-js .auto-block, .sticky, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
   display: flex;
   flex-direction: column; }
 
@@ -3661,6 +3661,34 @@ span.tarteaucitronTitle.tarteaucitronH3 {
 
 .slick-dots li button:before {
   font-family: 'Open sans', sans-serif; }
+
+.page--stickyfill {
+  height: 160vh;
+  text-align: center; }
+
+.container__sticky {
+  height: 100vh;
+  background: #ffd900; }
+
+.sticky {
+  align-items: center;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  border: solid 10px rgba(255, 0, 0, 0.575);
+  background: plum;
+  padding: 10px; }
+
+.link {
+  color: rgba(255, 217, 0, 0.767);
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 50px; }
+
+.gif {
+  display: block;
+  margin: auto; }
 
 /* 6. Page Codepens */
 :root {

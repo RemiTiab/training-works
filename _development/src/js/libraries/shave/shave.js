@@ -1,5 +1,5 @@
 import shave from 'shave';
-import { outerHeight } from '../helpers/outer-height';
+import { outerHeight } from '../../helpers/outer-height';
 
 //Get height element with margin -> Use outerHeight(el)
 //Get height element without margin -> use el.offsetHeight

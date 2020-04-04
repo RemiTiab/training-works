@@ -3,19 +3,19 @@ import { ready } from './helpers/document-ready';
 
 /* Import Libraries */
 // Particles.js
-import './libraries/particles';
+import './libraries/particles/particles';
 // Countup.js
-import { launchCountUp } from './libraries/countUp';
+import { launchCountUp } from './libraries/countup/countup';
 // Lottie animation
 import { launchLottieAnimation } from './libraries/lottie-animation/lottie-animation';
 // ScrollMagic.js
-import { launchScrollMagic } from './libraries/scrollmagic';
+import { launchScrollMagic } from './libraries/scrollmagic/scrollmagic';
 // Shave.js
 import {
   LaunchRunShave,
   launchAutoShave,
   launchMultiShave,
-} from './libraries/shave';
+} from './libraries/shave/shave';
 // Tarteaucitron.js - Cookies manager
 import { launchTarteaucitron } from './libraries/tarteaucitron/tarteaucitron';
 // Hamburgers.js
@@ -24,6 +24,8 @@ import { launchHamburgers } from './libraries/hamburgers/hamburgers';
 import { launchGlide } from './libraries/glide/glide';
 // Slick.js
 import { launchSlick } from './libraries/slick/slick';
+// Stickyfill
+import { launchStickyfill } from './libraries/stickyfill/stickyfill';
 
 /* Import Codepens */
 // Dynamic Timer
@@ -70,6 +72,8 @@ ready(function () {
   if (document.querySelector('.page--glide-js') !== null) launchGlide();
   // Slick.js
   if (document.querySelector('.page--slick-js') !== null) launchSlick();
+  // Stickyfill
+  if (document.querySelector('.page--stickyfill') !== null) launchStickyfill();
 
   /* Setup Codepens */
   // Dynamic Timer

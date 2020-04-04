@@ -1,4 +1,4 @@
-import '../../../node_modules/particles.js/particles';
+import 'particles.js';
 
 // Configure rendering with 'particles.json' in assets folder
 if (document.querySelector('.page--particles-js') !== null) {
