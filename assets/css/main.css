@@ -4674,6 +4674,60 @@ span.tarteaucitronTitle.tarteaucitronH3 {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent; }
 
+.page--some-css-tricks .last {
+  position: relative;
+  width: 150px;
+  display: block;
+  margin: auto;
+  background: white;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  cursor: pointer; }
+
+.page--some-css-tricks .last > img {
+  box-shadow: 0 0 10px #bac3c3; }
+
+.page--some-css-tricks .last > * {
+  height: 100%;
+  width: 100%;
+  display: block; }
+
+.page--some-css-tricks .last::before,
+.page--some-css-tricks .last::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  background-image: url("/others/some-css-tricks/logo_rt.png");
+  background-size: 200%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+.page--some-css-tricks .last::after {
+  bottom: 0;
+  right: 0;
+  background-position: right bottom; }
+
+.page--some-css-tricks .Border {
+  top: 0;
+  position: absolute;
+  box-sizing: border-box;
+  border: 9px black solid;
+  opacity: 0;
+  transform: rotate(0deg);
+  transition: transform 1s, opacity 0.5s; }
+
+.page--some-css-tricks .Border:hover {
+  opacity: 1;
+  transform: rotate(45deg);
+  transition: transform 1s, opacity 1.5s; }
+
 .page--header-background-scroll-effect {
   padding: 0; }
   .page--header-background-scroll-effect .header-paralax {

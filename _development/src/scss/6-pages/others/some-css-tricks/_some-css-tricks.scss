@@ -472,4 +472,63 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
   }
+
+  //Logo Rémi Tiab
+  .last {
+    position: relative;
+    width: 150px;
+    display: block;
+    margin: auto;
+    background: white;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  .last > img {
+    box-shadow: 0 0 10px #bac3c3;
+  }
+
+  .last > * {
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .last::before,
+  .last::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    background-image: url('/others/some-css-tricks/logo_rt.png');
+    background-size: 200%;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .last::after {
+    bottom: 0;
+    right: 0;
+    background-position: right bottom;
+  }
+
+  .Border {
+    top: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border: 9px black solid;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: transform 1s, opacity 0.5s;
+  }
+
+  .Border:hover {
+    opacity: 1;
+    transform: rotate(45deg);
+    transition: transform 1s, opacity 1.5s;
+  }
 }
