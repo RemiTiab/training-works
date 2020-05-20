@@ -31,7 +31,8 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Responsive News Card Slider (https://codepen.io/JavaScriptJunkie/pen/ZMMRRQ)
 
 ### Api's
-- Intersection-observer (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)
+- Intersection-observer API (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)
+- Drag and Drop API (https://www.w3schools.com/html/html5_draganddrop.asp)
 
 ### Others
 - Some CSS Tricks

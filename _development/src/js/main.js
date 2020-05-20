@@ -38,8 +38,10 @@ import { launchResponsiveBlogCardSlider } from './codepens/responsive-blog-card-
 import { launchResponsiveNewsCardSlider } from './codepens/responsive-news-card-slider';
 
 /* Import Apis */
-// Intersection-observer
+// Intersection-observer API
 import { launchObserver } from './apis/intersection-observer';
+// Drag and Drop API
+import { dragAndDropApi } from './apis/drag-and-drop-api';
 
 /* Import Others */
 // Some CSS Tricks
@@ -92,9 +94,12 @@ ready(function() {
     launchResponsiveNewsCardSlider();
 
   /* Setup Apis */
-  // Intersection-observer
+  // Intersection-observer API
   if (document.querySelector('.page--intersection-observer') !== null)
     launchObserver();
+  // Drag and Drop API
+  if (document.querySelector('.page--drag-and-drop-api') !== null)
+    dragAndDropApi();
 
   /* Setup Others */
   // Some CSS Tricks

@@ -86,7 +86,12 @@ app.get('/codepens-3', function (req, res) {
 /* Apis */
 // Intersection-observer
 app.get('/apis-0', function (req, res) {
-  res.render('apis-0', { pageTitle: 'Intersection-observer' });
+  res.render('apis-0', { pageTitle: 'Intersection-observer API' });
+});
+
+// Drag and Drop Api
+app.get('/apis-1', function (req, res) {
+  res.render('apis-1', { pageTitle: 'Drag and Drop API' });
 });
 
 /* Others */

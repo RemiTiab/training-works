@@ -1,0 +1,26 @@
+.page--drag-and-drop-api {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container__img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 350px;
+    background-color: $white-color;
+    border-radius: 10px;
+
+    &-1 {
+      margin-bottom: 35px;
+    }
+  }
+
+  .img {
+    width: 336px;
+    height: 336px;
+  }
+}
