@@ -885,7 +885,7 @@ button.swiper-pagination-bullet {
   display: flex;
   flex-direction: row; }
 
-.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--shave-js .block, .page--shave-js .wrapper__multiples, .page--shave-js .wrapper__auto, .page--shave-js .auto-block, .sticky, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick {
+.page--countup-js .container__numbers, .page--scrollmagic-js .parallax__container, .page--scrollmagic-js .parallax__block, .page--shave-js .block, .page--shave-js .wrapper__multiples, .page--shave-js .wrapper__auto, .page--shave-js .auto-block, .sticky, .page--some-css-tricks .container__tricks, .page--some-css-tricks .trick, .page--drag-and-drop-area, .page--drag-and-drop-area .area, .page--drag-and-drop-area .area .drop__area {
   display: flex;
   flex-direction: column; }
 
@@ -4738,3 +4738,26 @@ span.tarteaucitronTitle.tarteaucitronH3 {
   .page--header-background-scroll-effect .header-paralax img {
     width: 100%;
     margin-bottom: 250px; }
+
+.page--drag-and-drop-area {
+  align-items: center;
+  justify-content: center; }
+  .page--drag-and-drop-area .area {
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 200px;
+    background-color: white;
+    color: #2f2e26;
+    font-weight: bold;
+    cursor: pointer; }
+    .page--drag-and-drop-area .area .drop__area {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      outline: dashed 3px rgba(255, 217, 0, 0.767); }
+      .page--drag-and-drop-area .area .drop__area.onDropArea {
+        outline: solid 5px rgba(255, 217, 0, 0.767); }
+  .page--drag-and-drop-area .container__attached-files {
+    margin-top: 45px; }

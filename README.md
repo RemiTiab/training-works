@@ -36,3 +36,4 @@ Training to configure Libraries, Api's, Codepens and Others.
 ### Others
 - Some CSS Tricks
 - Header Background Scroll Effect
+- Drag and Drop Area

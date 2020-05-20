@@ -1,0 +1,34 @@
+.page--drag-and-drop-area {
+  @extend %flex-column;
+  align-items: center;
+  justify-content: center;
+
+  .area {
+    @extend %flex-column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 200px;
+    background-color: $white-color;
+    color: $casual-color;
+    font-weight: bold;
+    cursor: pointer;
+
+    .drop__area {
+      @extend %flex-column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      outline: dashed 3px $gold-color;
+
+      &.onDropArea {
+        outline: solid 5px $gold-color;
+      }
+    }
+  }
+
+  .container__attached-files {
+    margin-top: 45px;
+  }
+}

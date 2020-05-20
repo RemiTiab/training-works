@@ -46,8 +46,10 @@ import { launchObserver } from './apis/intersection-observer';
 import { launchSomeCssTricks } from './others/some-css-tricks';
 // Header Background Scroll Effect
 import { launchHeaderBackgroundScrollEffect } from './others/header-background-scroll-effect';
+// Drag And Drop Area
+import { dragAndDropArea } from './others/drag-and-drop-area';
 
-ready(function () {
+ready(function() {
   /* Setup General */
 
   /* Setup Libraries */
@@ -101,4 +103,7 @@ ready(function () {
   // Header Background Scroll Effect
   if (document.querySelector('.page--header-background-scroll-effect') !== null)
     launchHeaderBackgroundScrollEffect();
+  // Drag And Drop Area
+  if (document.querySelector('.page--drag-and-drop-area') !== null)
+    dragAndDropArea();
 });
