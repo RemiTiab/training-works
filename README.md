@@ -32,6 +32,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Split Image Hover Effect (https://codepen.io/mimikos/pen/rzNzVP)
 - Neon Love (https://codepen.io/al-ro/pen/BaaBage)
 - Animated Photo Gallery (https://codepen.io/oliviale/pen/RwNOPvx)
+- Smash To Submit Button (https://codepen.io/aaroniker/pen/NWqyego)
 
 ### Api's
 - Intersection-observer API (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)

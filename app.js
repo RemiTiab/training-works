@@ -94,6 +94,10 @@ app.get('/codepens-5', function (req, res) {
 app.get('/codepens-6', function (req, res) {
   res.render('codepens-6', { pageTitle: 'Animated Photo Gallery' });
 });
+// Smash To Submit Button
+app.get('/codepens-7', function (req, res) {
+  res.render('codepens-7', { pageTitle: 'Smash To Submit Button' });
+});
 
 /* Apis */
 // Intersection-observer

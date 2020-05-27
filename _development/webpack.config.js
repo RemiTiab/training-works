@@ -5,11 +5,11 @@ module.exports = {
   mode: 'development',
   entry: {
     global: './src/js/main.js',
-    styles: './src/scss/main.scss'
+    styles: './src/scss/main.scss',
   },
   output: {
     filename: 'js/[name].js',
-    path: path.resolve(__dirname, '../assets/')
+    path: path.resolve(__dirname, '../assets/'),
   },
   plugins: [new WebpackNotifierPlugin()],
   module: {
@@ -20,31 +20,31 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'css/[name].css'
-            }
+              name: 'css/[name].css',
+            },
           },
           {
-            loader: 'extract-loader'
+            loader: 'extract-loader',
           },
           {
-            loader: 'css-loader?-url'
+            loader: 'css-loader?-url',
           },
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
           },
           {
-            loader: 'sass-loader'
-          }
-        ]
+            loader: 'sass-loader',
+          },
+        ],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
-      }
-    ]
+          loader: 'babel-loader',
+        },
+      },
+    ],
   },
   resolve: {
     alias: {
@@ -75,7 +75,7 @@ module.exports = {
       'debug.addIndicators': path.resolve(
         'node_modules',
         'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'
-      )
-    }
-  }
+      ),
+    },
+  },
 };
