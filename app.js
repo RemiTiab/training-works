@@ -90,6 +90,10 @@ app.get('/codepens-4', function (req, res) {
 app.get('/codepens-5', function (req, res) {
   res.render('codepens-5', { pageTitle: 'Neon Love' });
 });
+// Animated Photo Gallery
+app.get('/codepens-6', function (req, res) {
+  res.render('codepens-6', { pageTitle: 'Animated Photo Gallery' });
+});
 
 /* Apis */
 // Intersection-observer

@@ -878,7 +878,7 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800);@import url(https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800);@import url(https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext);@import url(https://fonts.googleapis.com/css?family=Gochi+Hand);@charset "UTF-8";
 /* 1. Configuration and helpers */
 /* Grid Variables */
 .page--scrollmagic-js .parallax__block-content, .page--shave-js .wrapper__multiples .multi-blocks, .page--shave-js .wrapper__auto .auto-blocks, .page--intersection-observer .main-content__section {
@@ -4235,6 +4235,110 @@ span.tarteaucitronTitle.tarteaucitronH3 {
   margin: 0;
   padding: 0; }
 
+.page--animated-photo-gallery {
+  font-family: 'Fira Sans', sans-serif;
+  padding: 0;
+  margin: 0; }
+  .page--animated-photo-gallery * {
+    box-sizing: border-box; }
+  .page--animated-photo-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1400px;
+    margin: auto; }
+    .page--animated-photo-gallery .gallery__strip {
+      min-height: 100vh; }
+      .page--animated-photo-gallery .gallery__strip__wrapper {
+        flex: 0 0 100%;
+        justify-content: flex-end;
+        background: #222;
+        border-right: 2px solid #333;
+        position: relative; }
+  @media (min-width: 500px) {
+    .page--animated-photo-gallery .gallery__strip__wrapper {
+      flex: 0 0 50%; } }
+  @media (min-width: 950px) {
+    .page--animated-photo-gallery .gallery {
+      height: 100vh; }
+      .page--animated-photo-gallery .gallery__strip.one {
+        -webkit-animation: 60s move-it ease alternate infinite 5s;
+                animation: 60s move-it ease alternate infinite 5s;
+        transform: translateY(2%); }
+      .page--animated-photo-gallery .gallery__strip.three {
+        -webkit-animation: 70s move-it ease alternate infinite 6s;
+                animation: 70s move-it ease alternate infinite 6s;
+        transform: translateY(2%); }
+      .page--animated-photo-gallery .gallery__strip.two {
+        -webkit-animation: 58s move-it-2 ease alternate infinite 5s;
+                animation: 58s move-it-2 ease alternate infinite 5s;
+        transform: translateY(-50%); }
+      .page--animated-photo-gallery .gallery__strip.four {
+        -webkit-animation: 65s move-it-2 ease alternate infinite 5.5s;
+                animation: 65s move-it-2 ease alternate infinite 5.5s;
+        transform: translateY(-50%); }
+      .page--animated-photo-gallery .gallery__strip:hover {
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused; }
+      .page--animated-photo-gallery .gallery__strip__wrapper {
+        flex: 0 0 25%; } }
+  .page--animated-photo-gallery .photo {
+    position: relative;
+    text-align: right;
+    padding-bottom: 3rem; }
+    .page--animated-photo-gallery .photo__image img {
+      width: 90%;
+      transform: translateX(30%);
+      transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s; }
+    .page--animated-photo-gallery .photo__name {
+      text-transform: uppercase;
+      font-size: 40px;
+      letter-spacing: 2px;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: white;
+      margin-top: -25px;
+      transition: 0.4s ease-in-out 0.4s;
+      position: relative;
+      width: 100%; }
+    .page--animated-photo-gallery .photo:hover .photo__image img {
+      transform: translateX(0%); }
+    .page--animated-photo-gallery .photo:hover .photo__name {
+      color: #fff; }
+
+@-webkit-keyframes move-it {
+  0%,
+  90%,
+  100% {
+    transform: translateY(2%); }
+  45% {
+    transform: translateY(-50%); } }
+
+@keyframes move-it {
+  0%,
+  90%,
+  100% {
+    transform: translateY(2%); }
+  45% {
+    transform: translateY(-50%); } }
+
+@-webkit-keyframes move-it-2 {
+  0%,
+  90%,
+  100% {
+    transform: translateY(-50%); }
+  45% {
+    transform: translateY(5%); } }
+
+@keyframes move-it-2 {
+  0%,
+  90%,
+  100% {
+    transform: translateY(-50%); }
+  45% {
+    transform: translateY(5%); } }
+
 /* 6. Page Apis */
 .page--intersection-observer {
   overflow: hidden; }
@@ -4285,17 +4389,17 @@ span.tarteaucitronTitle.tarteaucitronH3 {
     height: 336px; }
 
 /* 6. Page Others */
-.page--some-css-tricks .container__tricks {
-  align-items: center;
-  color: white; }
-
-.page--some-css-tricks .trick {
-  align-items: center;
-  width: 100%;
-  margin-top: 1.875em; }
-  .page--some-css-tricks .trick__subtitle {
-    margin-bottom: 50px;
-    text-decoration: underline; }
+.page--some-css-tricks { }
+  .page--some-css-tricks .container__tricks {
+    align-items: center;
+    color: white; }
+  .page--some-css-tricks .trick {
+    align-items: center;
+    width: 100%;
+    margin-top: 1.875em; }
+    .page--some-css-tricks .trick__subtitle {
+      margin-bottom: 50px;
+      text-decoration: underline; }
 
 @-webkit-keyframes bouncing-loader {
   to {
@@ -4306,63 +4410,53 @@ span.tarteaucitronTitle.tarteaucitronH3 {
   to {
     opacity: 0.1;
     transform: translate3d(0, -1rem, 0); } }
-
-.page--some-css-tricks .bouncing-loader {
-  display: flex;
-  justify-content: center; }
-
-.page--some-css-tricks .bouncing-loader > div {
-  width: 1rem;
-  height: 1rem;
-  margin: 3rem 0.2rem;
-  background: #8385aa;
-  border-radius: 50%;
-  -webkit-animation: bouncing-loader 0.6s infinite alternate;
-          animation: bouncing-loader 0.6s infinite alternate; }
-
-.page--some-css-tricks .bouncing-loader > div:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s; }
-
-.page--some-css-tricks .bouncing-loader > div:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s; }
-
-.page--some-css-tricks .button {
-  background-color: #c47135;
-  border: none;
-  color: white;
-  outline: none;
-  padding: 12px 40px 10px;
-  position: relative;
-  border-radius: 5px; }
-
-.page--some-css-tricks .button:before,
-.page--some-css-tricks .button:after {
-  border: 0 solid transparent;
-  transition: all 0.25s;
-  content: '';
-  height: 24px;
-  position: absolute;
-  width: 24px; }
-
-.page--some-css-tricks .button:before {
-  border-top: 2px solid #c47135;
-  left: 0px;
-  top: -5px; }
-
-.page--some-css-tricks .button:after {
-  border-bottom: 2px solid #c47135;
-  bottom: -5px;
-  right: 0px; }
-
-.page--some-css-tricks .button:hover {
-  background-color: #c47135; }
-
-.page--some-css-tricks .button:hover:before,
-.page--some-css-tricks .button:hover:after {
-  height: 100%;
-  width: 100%; }
+  .page--some-css-tricks .bouncing-loader {
+    display: flex;
+    justify-content: center; }
+  .page--some-css-tricks .bouncing-loader > div {
+    width: 1rem;
+    height: 1rem;
+    margin: 3rem 0.2rem;
+    background: #8385aa;
+    border-radius: 50%;
+    -webkit-animation: bouncing-loader 0.6s infinite alternate;
+            animation: bouncing-loader 0.6s infinite alternate; }
+  .page--some-css-tricks .bouncing-loader > div:nth-child(2) {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s; }
+  .page--some-css-tricks .bouncing-loader > div:nth-child(3) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s; }
+  .page--some-css-tricks .button {
+    background-color: #c47135;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    border-radius: 5px; }
+  .page--some-css-tricks .button:before,
+  .page--some-css-tricks .button:after {
+    border: 0 solid transparent;
+    transition: all 0.25s;
+    content: '';
+    height: 24px;
+    position: absolute;
+    width: 24px; }
+  .page--some-css-tricks .button:before {
+    border-top: 2px solid #c47135;
+    left: 0px;
+    top: -5px; }
+  .page--some-css-tricks .button:after {
+    border-bottom: 2px solid #c47135;
+    bottom: -5px;
+    right: 0px; }
+  .page--some-css-tricks .button:hover {
+    background-color: #c47135; }
+  .page--some-css-tricks .button:hover:before,
+  .page--some-css-tricks .button:hover:after {
+    height: 100%;
+    width: 100%; }
 
 @-webkit-keyframes donut-spin {
   0% {
@@ -4375,77 +4469,66 @@ span.tarteaucitronTitle.tarteaucitronH3 {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-
-.page--some-css-tricks .donut {
-  display: inline-block;
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-left-color: #7983ff;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  -webkit-animation: donut-spin 1.2s linear infinite;
-          animation: donut-spin 1.2s linear infinite; }
-
-.page--some-css-tricks .el {
-  transition: max-height 0.5s;
-  overflow: hidden;
-  max-height: 0;
-  color: gold; }
-
-.page--some-css-tricks .trigger:hover > .el {
-  max-height: var(--max-height); }
-
-.page--some-css-tricks .hover-shadow-box-animation {
-  display: inline-block;
-  vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  margin: 10px;
-  transition-duration: 0.3s;
-  transition-property: box-shadow, transform; }
-
-.page--some-css-tricks .hover-shadow-box-animation:hover,
-.page--some-css-tricks .hover-shadow-box-animation:focus,
-.page--some-css-tricks .hover-shadow-box-animation:active {
-  box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
-  transform: scale(1.2); }
-
-.page--some-css-tricks .hover-underline-animation {
-  display: inline-block;
-  position: relative;
-  color: gold; }
-
-.page--some-css-tricks .hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: gold;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
-.page--some-css-tricks .hover-underline-animation:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left; }
-
-.page--some-css-tricks .ripple-loader {
-  position: relative;
-  width: 64px;
-  height: 64px; }
-
-.page--some-css-tricks .ripple-loader div {
-  position: absolute;
-  border: 4px solid #76ff03;
-  border-radius: 50%;
-  -webkit-animation: ripple-loader 1s ease-out infinite;
-          animation: ripple-loader 1s ease-out infinite; }
-
-.page--some-css-tricks .ripple-loader div:nth-child(2) {
-  -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s; }
+  .page--some-css-tricks .donut {
+    display: inline-block;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #7983ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: donut-spin 1.2s linear infinite;
+            animation: donut-spin 1.2s linear infinite; }
+  .page--some-css-tricks .el {
+    transition: max-height 0.5s;
+    overflow: hidden;
+    max-height: 0;
+    color: gold; }
+  .page--some-css-tricks .trigger:hover > .el {
+    max-height: var(--max-height); }
+  .page--some-css-tricks .hover-shadow-box-animation {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    margin: 10px;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform; }
+  .page--some-css-tricks .hover-shadow-box-animation:hover,
+  .page--some-css-tricks .hover-shadow-box-animation:focus,
+  .page--some-css-tricks .hover-shadow-box-animation:active {
+    box-shadow: 1px 10px 10px -10px rgba(0, 0, 24, 0.5);
+    transform: scale(1.2); }
+  .page--some-css-tricks .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: gold; }
+  .page--some-css-tricks .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: gold;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; }
+  .page--some-css-tricks .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left; }
+  .page--some-css-tricks .ripple-loader {
+    position: relative;
+    width: 64px;
+    height: 64px; }
+  .page--some-css-tricks .ripple-loader div {
+    position: absolute;
+    border: 4px solid #76ff03;
+    border-radius: 50%;
+    -webkit-animation: ripple-loader 1s ease-out infinite;
+            animation: ripple-loader 1s ease-out infinite; }
+  .page--some-css-tricks .ripple-loader div:nth-child(2) {
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s; }
 
 @-webkit-keyframes ripple-loader {
   0% {
@@ -4474,305 +4557,306 @@ span.tarteaucitronTitle.tarteaucitronH3 {
     width: 64px;
     height: 64px;
     opacity: 0; } }
+  .page--some-css-tricks .unselectable {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: gold; }
+  .page--some-css-tricks .reference {
+    position: relative;
+    background: tomato;
+    width: 100px;
+    height: 100px; }
+  .page--some-css-tricks .popout-menu {
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    background: #333;
+    color: gold;
+    padding: 15px; }
+  .page--some-css-tricks .reference:hover > .popout-menu,
+  .page--some-css-tricks .reference:focus > .popout-menu,
+  .page--some-css-tricks .reference:focus-within > .popout-menu {
+    visibility: visible; }
+  .page--some-css-tricks span {
+    padding: 0 1rem;
+    transition: opacity 0.2s;
+    color: gold; }
+  .page--some-css-tricks .sibling-fade:hover span:not(:hover) {
+    opacity: 0.5; }
+  .page--some-css-tricks .truncate-text-multiline {
+    overflow: hidden;
+    display: block;
+    height: 109.2px;
+    margin: 0 auto;
+    font-size: 26px;
+    line-height: 1.4;
+    width: 400px;
+    position: relative; }
+  .page--some-css-tricks .truncate-text-multiline:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 36.4px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #2f2e26 50%); }
+  .page--some-css-tricks .truncate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
+    color: gold; }
+  .page--some-css-tricks .container {
+    position: relative;
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    color: gold; }
+  .page--some-css-tricks .container:before,
+  .page--some-css-tricks .container:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 19px;
+    border: 11px solid transparent;
+    border-bottom-color: #dddddd; }
+  .page--some-css-tricks .container:after {
+    left: 20px;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff; }
+  .page--some-css-tricks ::-moz-selection {
+    background: aquamarine;
+    color: black; }
+  .page--some-css-tricks ::selection {
+    background: aquamarine;
+    color: black; }
+  .page--some-css-tricks .custom-text-selection::-moz-selection {
+    background: deeppink;
+    color: white; }
+  .page--some-css-tricks .custom-text-selection::selection {
+    background: deeppink;
+    color: white; }
+  .page--some-css-tricks .dynamic-shadow {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(75deg, #6d78ff, #00ffb8);
+    z-index: 1; }
+  .page--some-css-tricks .dynamic-shadow::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    top: 0.5rem;
+    -webkit-filter: blur(0.4rem);
+            filter: blur(0.4rem);
+    opacity: 0.7;
+    z-index: -1; }
+  .page--some-css-tricks .container {
+    margin: 40px auto;
+    max-width: 700px; }
+  .page--some-css-tricks .element {
+    padding: 20px;
+    height: 300px;
+    width: 100%;
+    background-color: skyblue;
+    box-sizing: border-box; }
+  .page--some-css-tricks .element p {
+    text-align: center;
+    color: white;
+    font-size: 3em; }
+  .page--some-css-tricks .element:-ms-fullscreen p {
+    visibility: visible; }
+  .page--some-css-tricks .element:-webkit-full-screen {
+    background-color: #e4708a;
+    width: 100vw;
+    height: 100vh; }
+  .page--some-css-tricks .element:-ms-fullscreen {
+    background-color: #e4708a;
+    width: 100vw;
+    height: 100vh; }
+  .page--some-css-tricks .element:fullscreen {
+    background-color: #e4708a;
+    width: 100vw;
+    height: 100vh; }
+  .page--some-css-tricks .gradient-text {
+    background: -webkit-linear-gradient(pink, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  .page--some-css-tricks .mouse-cursor-gradient-tracking {
+    position: relative;
+    background: #7983ff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden; }
+  .page--some-css-tricks .mouse-cursor-gradient-tracking span {
+    position: relative; }
+  .page--some-css-tricks .mouse-cursor-gradient-tracking::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, pink, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease; }
+  .page--some-css-tricks .mouse-cursor-gradient-tracking:hover::before {
+    --size: 200px; }
+  .page--some-css-tricks .overflow-scroll-gradient {
+    position: relative;
+    color: #2f2e26; }
+  .page--some-css-tricks .overflow-scroll-gradient::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    height: 25px;
+    background: linear-gradient(rgba(255, 255, 255, 0.001), white);
+    /* transparent keyword is broken in Safari */
+    pointer-events: none; }
+  .page--some-css-tricks .overflow-scroll-gradient__scroller {
+    overflow-y: scroll;
+    background: white;
+    width: 240px;
+    height: 200px;
+    padding: 15px;
+    line-height: 1.2; }
+  .page--some-css-tricks .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer; }
+  .page--some-css-tricks .switch::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: white;
+    top: 1px;
+    left: 1px;
+    transition: all 0.3s; }
+  .page--some-css-tricks input[type='checkbox']:checked + .switch::after {
+    transform: translateX(20px); }
+  .page--some-css-tricks input[type='checkbox']:checked + .switch {
+    background-color: #7983ff; }
+  .page--some-css-tricks .offscreen {
+    position: absolute;
+    left: -9999px; }
+  .page--some-css-tricks .triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid gold;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent; }
+  .page--some-css-tricks .last {
+    position: relative;
+    width: 150px;
+    display: block;
+    margin: auto;
+    background: white;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    cursor: pointer; }
+  .page--some-css-tricks .last > img {
+    box-shadow: 0 0 10px #bac3c3; }
+  .page--some-css-tricks .last > * {
+    height: 100%;
+    width: 100%;
+    display: block; }
+  .page--some-css-tricks .last::before,
+  .page--some-css-tricks .last::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+    background-image: url("/others/some-css-tricks/logo_rt.png");
+    background-size: 200%;
+    pointer-events: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  .page--some-css-tricks .last::after {
+    bottom: 0;
+    right: 0;
+    background-position: right bottom; }
+  .page--some-css-tricks .Border {
+    top: 0;
+    position: absolute;
+    box-sizing: border-box;
+    border: 9px black solid;
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: transform 1s, opacity 0.5s; }
+  .page--some-css-tricks .Border:hover {
+    opacity: 1;
+    transform: rotate(45deg);
+    transition: transform 1s, opacity 1.5s; }
+  .page--some-css-tricks .multi-line-spanning-animated-underline {
+    background-color: #ffb7b0;
+    padding: 50px;
+    color: #494a4b;
+    font-family: 'Gochi Hand', cursive;
+    text-align: left;
+    font-size: 130%; }
+    .page--some-css-tricks .multi-line-spanning-animated-underline h2 {
+      line-height: 1.5;
+      display: inline;
+      background-image: linear-gradient(transparent 50%, #e1fffe 50%, #b0f8ff 85%, transparent 85%, transparent 100%);
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      -webkit-animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards;
+              animation: animatedBackground 2s cubic-bezier(0.645, 0.045, 0.355, 1) 0.5s forwards; }
 
-.page--some-css-tricks .unselectable {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  color: gold; }
+@-webkit-keyframes animatedBackground {
+  to {
+    background-size: 100% 100%; } }
 
-.page--some-css-tricks .reference {
-  position: relative;
-  background: tomato;
-  width: 100px;
-  height: 100px; }
-
-.page--some-css-tricks .popout-menu {
-  position: absolute;
-  visibility: hidden;
-  left: 100%;
-  background: #333;
-  color: gold;
-  padding: 15px; }
-
-.page--some-css-tricks .reference:hover > .popout-menu,
-.page--some-css-tricks .reference:focus > .popout-menu,
-.page--some-css-tricks .reference:focus-within > .popout-menu {
-  visibility: visible; }
-
-.page--some-css-tricks span {
-  padding: 0 1rem;
-  transition: opacity 0.2s;
-  color: gold; }
-
-.page--some-css-tricks .sibling-fade:hover span:not(:hover) {
-  opacity: 0.5; }
-
-.page--some-css-tricks .truncate-text-multiline {
-  overflow: hidden;
-  display: block;
-  height: 109.2px;
-  margin: 0 auto;
-  font-size: 26px;
-  line-height: 1.4;
-  width: 400px;
-  position: relative; }
-
-.page--some-css-tricks .truncate-text-multiline:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 150px;
-  height: 36.4px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), #2f2e26 50%); }
-
-.page--some-css-tricks .truncate-text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 200px;
-  color: gold; }
-
-.page--some-css-tricks .container {
-  position: relative;
-  background: #ffffff;
-  padding: 15px;
-  border: 1px solid #dddddd;
-  margin-top: 20px;
-  color: gold; }
-
-.page--some-css-tricks .container:before,
-.page--some-css-tricks .container:after {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 19px;
-  border: 11px solid transparent;
-  border-bottom-color: #dddddd; }
-
-.page--some-css-tricks .container:after {
-  left: 20px;
-  border: 10px solid transparent;
-  border-bottom-color: #ffffff; }
-
-.page--some-css-tricks ::-moz-selection {
-  background: aquamarine;
-  color: black; }
-
-.page--some-css-tricks ::selection {
-  background: aquamarine;
-  color: black; }
-
-.page--some-css-tricks .custom-text-selection::-moz-selection {
-  background: deeppink;
-  color: white; }
-
-.page--some-css-tricks .custom-text-selection::selection {
-  background: deeppink;
-  color: white; }
-
-.page--some-css-tricks .dynamic-shadow {
-  position: relative;
-  width: 10rem;
-  height: 10rem;
-  background: linear-gradient(75deg, #6d78ff, #00ffb8);
-  z-index: 1; }
-
-.page--some-css-tricks .dynamic-shadow::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: inherit;
-  top: 0.5rem;
-  -webkit-filter: blur(0.4rem);
-          filter: blur(0.4rem);
-  opacity: 0.7;
-  z-index: -1; }
-
-.page--some-css-tricks .container {
-  margin: 40px auto;
-  max-width: 700px; }
-
-.page--some-css-tricks .element {
-  padding: 20px;
-  height: 300px;
-  width: 100%;
-  background-color: skyblue;
-  box-sizing: border-box; }
-
-.page--some-css-tricks .element p {
-  text-align: center;
-  color: white;
-  font-size: 3em; }
-
-.page--some-css-tricks .element:-ms-fullscreen p {
-  visibility: visible; }
-
-.page--some-css-tricks .element:-webkit-full-screen {
-  background-color: #e4708a;
-  width: 100vw;
-  height: 100vh; }
-
-.page--some-css-tricks .element:-ms-fullscreen {
-  background-color: #e4708a;
-  width: 100vw;
-  height: 100vh; }
-
-.page--some-css-tricks .element:fullscreen {
-  background-color: #e4708a;
-  width: 100vw;
-  height: 100vh; }
-
-.page--some-css-tricks .gradient-text {
-  background: -webkit-linear-gradient(pink, red);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; }
-
-.page--some-css-tricks .mouse-cursor-gradient-tracking {
-  position: relative;
-  background: #7983ff;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  border: none;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden; }
-
-.page--some-css-tricks .mouse-cursor-gradient-tracking span {
-  position: relative; }
-
-.page--some-css-tricks .mouse-cursor-gradient-tracking::before {
-  --size: 0;
-  content: '';
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, pink, transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease; }
-
-.page--some-css-tricks .mouse-cursor-gradient-tracking:hover::before {
-  --size: 200px; }
-
-.page--some-css-tricks .overflow-scroll-gradient {
-  position: relative;
-  color: #2f2e26; }
-
-.page--some-css-tricks .overflow-scroll-gradient::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  width: 250px;
-  height: 25px;
-  background: linear-gradient(rgba(255, 255, 255, 0.001), white);
-  /* transparent keyword is broken in Safari */
-  pointer-events: none; }
-
-.page--some-css-tricks .overflow-scroll-gradient__scroller {
-  overflow-y: scroll;
-  background: white;
-  width: 240px;
-  height: 200px;
-  padding: 15px;
-  line-height: 1.2; }
-
-.page--some-css-tricks .switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  transition: all 0.3s;
-  cursor: pointer; }
-
-.page--some-css-tricks .switch::after {
-  content: '';
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  border-radius: 18px;
-  background-color: white;
-  top: 1px;
-  left: 1px;
-  transition: all 0.3s; }
-
-.page--some-css-tricks input[type='checkbox']:checked + .switch::after {
-  transform: translateX(20px); }
-
-.page--some-css-tricks input[type='checkbox']:checked + .switch {
-  background-color: #7983ff; }
-
-.page--some-css-tricks .offscreen {
-  position: absolute;
-  left: -9999px; }
-
-.page--some-css-tricks .triangle {
-  width: 0;
-  height: 0;
-  border-top: 20px solid gold;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent; }
-
-.page--some-css-tricks .last {
-  position: relative;
-  width: 150px;
-  display: block;
-  margin: auto;
-  background: white;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  cursor: pointer; }
-
-.page--some-css-tricks .last > img {
-  box-shadow: 0 0 10px #bac3c3; }
-
-.page--some-css-tricks .last > * {
-  height: 100%;
-  width: 100%;
-  display: block; }
-
-.page--some-css-tricks .last::before,
-.page--some-css-tricks .last::after {
-  content: '';
-  display: block;
-  position: absolute;
-  background-color: white;
-  width: 50%;
-  height: 50%;
-  z-index: 1;
-  background-image: url("/others/some-css-tricks/logo_rt.png");
-  background-size: 200%;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-
-.page--some-css-tricks .last::after {
-  bottom: 0;
-  right: 0;
-  background-position: right bottom; }
-
-.page--some-css-tricks .Border {
-  top: 0;
-  position: absolute;
-  box-sizing: border-box;
-  border: 9px black solid;
-  opacity: 0;
-  transform: rotate(0deg);
-  transition: transform 1s, opacity 0.5s; }
-
-.page--some-css-tricks .Border:hover {
-  opacity: 1;
-  transform: rotate(45deg);
-  transition: transform 1s, opacity 1.5s; }
+@keyframes animatedBackground {
+  to {
+    background-size: 100% 100%; } }
+  .page--some-css-tricks .great-hover-animation {
+    padding: 20px 40px;
+    background: none;
+    border: none;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer; }
+    .page--some-css-tricks .great-hover-animation:after, .page--some-css-tricks .great-hover-animation:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border: 2px solid #000;
+      transition: transform 0.2s; }
+    .page--some-css-tricks .great-hover-animation:after {
+      transform: translate(5px, 5px); }
+      .page--some-css-tricks .great-hover-animation:after:before {
+        transform: translate(-5px, -5px); }
+    .page--some-css-tricks .great-hover-animation:hover:after, .page--some-css-tricks .great-hover-animation:hover:before {
+      transform: translate(0); }
 
 .page--header-background-scroll-effect {
   padding: 0; }
