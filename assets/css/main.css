@@ -4209,6 +4209,28 @@ span.tarteaucitronTitle.tarteaucitronH3 {
       height: 100%;
       width: 100%; }
 
+.page--split-image-hover-effect {
+  text-align: center; }
+  .page--split-image-hover-effect .placeholder {
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+    box-sizing: border-box; }
+  .page--split-image-hover-effect .gridContainer {
+    width: 100%;
+    height: 100%; }
+  .page--split-image-hover-effect .gridTile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: center; }
+
 /* 6. Page Apis */
 .page--intersection-observer {
   overflow: hidden; }

@@ -29,6 +29,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Cross Color Text Reveal (https://codepen.io/ispykenny/pen/BaaYqYZ)
 - Responsive Blog Card Slider (https://codepen.io/JavaScriptJunkie/pen/WgRBxw)
 - Responsive News Card Slider (https://codepen.io/JavaScriptJunkie/pen/ZMMRRQ)
+- Split Image Hover Effect (https://codepen.io/mimikos/pen/rzNzVP)
 
 ### Api's
 - Intersection-observer API (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)

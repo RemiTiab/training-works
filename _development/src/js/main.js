@@ -36,6 +36,8 @@ import { launchCrossColorTextReveal } from './codepens/cross-color-text-reveal';
 import { launchResponsiveBlogCardSlider } from './codepens/responsive-blog-card-slider';
 // Responsive News Card Slider
 import { launchResponsiveNewsCardSlider } from './codepens/responsive-news-card-slider';
+// Split Image Hover Effect
+import { splitImageHoverEffect } from './codepens/split-image-hover-effect';
 
 /* Import Apis */
 // Intersection-observer API
@@ -92,6 +94,9 @@ ready(function() {
   // Responsive News Card Slider
   if (document.querySelector('.page--responsive-news-card-slider') !== null)
     launchResponsiveNewsCardSlider();
+  // Split Image Hover Effect
+  if (document.querySelector('.page--split-image-hover-effect') !== null)
+    splitImageHoverEffect();
 
   /* Setup Apis */
   // Intersection-observer API
