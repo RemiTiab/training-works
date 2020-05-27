@@ -33,6 +33,7 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Neon Love (https://codepen.io/al-ro/pen/BaaBage)
 - Animated Photo Gallery (https://codepen.io/oliviale/pen/RwNOPvx)
 - Smash To Submit Button (https://codepen.io/aaroniker/pen/NWqyego)
+- Vertical Progressbar on Scrolling (https://codepen.io/Codepalm/pen/oNXqWRV)
 
 ### Api's
 - Intersection-observer API (https://developer.mozilla.org/fr/docs/Web/API/Intersection_Observer_API)

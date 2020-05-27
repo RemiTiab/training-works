@@ -42,6 +42,8 @@ import { launchSplitImageHoverEffect } from './codepens/split-image-hover-effect
 import { launchNeonLove } from './codepens/neon-love';
 // Smash To Submit Button
 import { launchSmashToSubmitButton } from './codepens/smash-to-submit-button/smash-to-submit-button';
+// Vertical Progressbar on Scrolling
+import { launchVerticalProgressbarOnScrolling } from './codepens/vertical-progressbar-on-scrolling';
 
 /* Import Apis */
 // Intersection-observer API
@@ -104,7 +106,13 @@ ready(function() {
   // Neon Love
   if (document.querySelector('.page--neon-love') !== null) launchNeonLove();
   // Smash To Submit Button
-  if (document.querySelector('.page--smash-to-submit-button') !== null) launchSmashToSubmitButton();
+  if (document.querySelector('.page--smash-to-submit-button') !== null)
+    launchSmashToSubmitButton();
+  // Vertical Progressbar on Scrolling
+  if (
+    document.querySelector('.page--vertical-progressbar-on-scrolling') !== null
+  )
+    launchVerticalProgressbarOnScrolling();
 
   /* Setup Apis */
   // Intersection-observer API

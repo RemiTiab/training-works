@@ -98,6 +98,10 @@ app.get('/codepens-6', function (req, res) {
 app.get('/codepens-7', function (req, res) {
   res.render('codepens-7', { pageTitle: 'Smash To Submit Button' });
 });
+// Vertical Progressbar on Scrolling
+app.get('/codepens-8', function (req, res) {
+  res.render('codepens-8', { pageTitle: 'Vertical Progressbar on Scrolling' });
+});
 
 /* Apis */
 // Intersection-observer
