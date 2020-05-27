@@ -37,7 +37,9 @@ import { launchResponsiveBlogCardSlider } from './codepens/responsive-blog-card-
 // Responsive News Card Slider
 import { launchResponsiveNewsCardSlider } from './codepens/responsive-news-card-slider';
 // Split Image Hover Effect
-import { splitImageHoverEffect } from './codepens/split-image-hover-effect';
+import { launchSplitImageHoverEffect } from './codepens/split-image-hover-effect';
+// Neon Love
+import { launchNeonLove } from './codepens/neon-love';
 
 /* Import Apis */
 // Intersection-observer API
@@ -96,7 +98,10 @@ ready(function() {
     launchResponsiveNewsCardSlider();
   // Split Image Hover Effect
   if (document.querySelector('.page--split-image-hover-effect') !== null)
-    splitImageHoverEffect();
+    launchSplitImageHoverEffect();
+  // Neon Love
+  if (document.querySelector('.page--neon-love') !== null)
+    launchNeonLove();
 
   /* Setup Apis */
   // Intersection-observer API

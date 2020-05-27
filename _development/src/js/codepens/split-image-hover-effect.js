@@ -1,4 +1,4 @@
-export const splitImageHoverEffect = (_) => {
+export const launchSplitImageHoverEffect = (_) => {
   var options = {
     imgSrc: 'https://unsplash.it/g/1024/768?image=874',
     containerName: 'placeholder',
