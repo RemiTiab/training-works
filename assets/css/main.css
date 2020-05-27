@@ -5220,6 +5220,77 @@ span.tarteaucitronTitle.tarteaucitronH3 {
         z-index: 0;
         -webkit-animation: cube-shadow 6000ms infinite alternate linear;
                 animation: cube-shadow 6000ms infinite alternate linear; }
+  .page--some-css-tricks .trick--3D-loader {
+    padding-top: 30px;
+    height: 200px;
+    background: black; }
+
+@-webkit-keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0); }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn); } }
+
+@keyframes rotate1 {
+  from {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0); }
+  to {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(1turn); } }
+
+@-webkit-keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0); }
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn); } }
+
+@keyframes rotate2 {
+  from {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0); }
+  to {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(1turn); } }
+
+@-webkit-keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0); }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn); } }
+
+@keyframes rotate3 {
+  from {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0); }
+  to {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(1turn); } }
+    .page--some-css-tricks .trick--3D-loader .loader {
+      position: relative;
+      transform-style: preserve-3d;
+      perspective-origin: center;
+      transform: perspective(800px);
+      width: 50px;
+      height: 50px; }
+      .page--some-css-tricks .trick--3D-loader .loader .arc {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border-bottom: 3px solid red; }
+        .page--some-css-tricks .trick--3D-loader .loader .arc:nth-child(1) {
+          -webkit-animation: rotate1 1.15s linear infinite;
+                  animation: rotate1 1.15s linear infinite;
+          -webkit-animation-delay: -0.8s;
+                  animation-delay: -0.8s; }
+        .page--some-css-tricks .trick--3D-loader .loader .arc:nth-child(2) {
+          -webkit-animation: rotate2 1.15s linear infinite;
+                  animation: rotate2 1.15s linear infinite;
+          -webkit-animation-delay: -0.4s;
+                  animation-delay: -0.4s; }
+        .page--some-css-tricks .trick--3D-loader .loader .arc:nth-child(3) {
+          -webkit-animation: rotate3 1.15s linear infinite;
+                  animation: rotate3 1.15s linear infinite;
+          -webkit-animation-delay: 0s;
+                  animation-delay: 0s; }
 
 .page--header-background-scroll-effect {
   padding: 0; }
