@@ -129,3 +129,8 @@ app.get('/others-1', function (req, res) {
 app.get('/others-2', function (req, res) {
   res.render('others-2', { pageTitle: 'Drag and Drop Area' });
 });
+
+// Countdown Timer
+app.get('/others-3', function (req, res) {
+  res.render('others-3', { pageTitle: 'Countdown Timer' });
+});

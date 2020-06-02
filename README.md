@@ -43,3 +43,4 @@ Training to configure Libraries, Api's, Codepens and Others.
 - Some CSS Tricks
 - Header Background Scroll Effect
 - Drag and Drop Area
+- Countdown Timer (https://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/)

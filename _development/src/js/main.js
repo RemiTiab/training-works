@@ -58,6 +58,8 @@ import { launchSomeCssTricks } from './others/some-css-tricks';
 import { launchHeaderBackgroundScrollEffect } from './others/header-background-scroll-effect';
 // Drag And Drop Area
 import { dragAndDropArea } from './others/drag-and-drop-area';
+// Countdown Timer
+import { launchCountdownTimer } from './others/countdown-timer/countdown-timer';
 
 ready(function() {
   /* Setup General */
@@ -132,4 +134,7 @@ ready(function() {
   // Drag And Drop Area
   if (document.querySelector('.page--drag-and-drop-area') !== null)
     dragAndDropArea();
+  // Countdown Timer
+  if (document.querySelector('.page--countdown-timer') !== null)
+    launchCountdownTimer();
 });
